@@ -3,10 +3,10 @@
 <mapper namespace="com.zhaolian.demo.data.dao.BankMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Bank">
     <!--@mbg.generated-->
-    <!--@Table bank-->
-    <id column="bid" jdbcType="DECIMAL" property="bid" />
-    <result column="uid" jdbcType="DECIMAL" property="uid" />
-    <result column="bankcard" jdbcType="DECIMAL" property="bankcard" />
+    <!--@Table BANK-->
+    <id column="BID" jdbcType="DECIMAL" property="bid" />
+    <result column="USERID" jdbcType="DECIMAL" property="userid" />
+    <result column="BANKCARD" jdbcType="DECIMAL" property="bankcard" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -70,7 +70,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    bid, "uid", bankcard
+    BID, USERID, BANKCARD
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.BankExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -79,7 +79,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from bank
+    from BANK
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -91,48 +91,48 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from bank
-    where bid = #{bid,jdbcType=DECIMAL}
+    from BANK
+    where BID = #{bid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from bank
-    where bid = #{bid,jdbcType=DECIMAL}
+    delete from BANK
+    where BID = #{bid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.BankExample">
     <!--@mbg.generated-->
-    delete from bank
+    delete from BANK
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Bank">
     <!--@mbg.generated-->
-    insert into bank (bid, "uid", bankcard
+    insert into BANK (BID, USERID, BANKCARD
       )
-    values (#{bid,jdbcType=DECIMAL}, #{uid,jdbcType=DECIMAL}, #{bankcard,jdbcType=DECIMAL}
+    values (#{bid,jdbcType=DECIMAL}, #{userid,jdbcType=DECIMAL}, #{bankcard,jdbcType=DECIMAL}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Bank">
     <!--@mbg.generated-->
-    insert into bank
+    insert into BANK
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="bid != null">
-        bid,
+        BID,
       </if>
-      <if test="uid != null">
-        "uid",
+      <if test="userid != null">
+        USERID,
       </if>
       <if test="bankcard != null">
-        bankcard,
+        BANKCARD,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="bid != null">
         #{bid,jdbcType=DECIMAL},
       </if>
-      <if test="uid != null">
-        #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
       </if>
       <if test="bankcard != null">
         #{bankcard,jdbcType=DECIMAL},
@@ -141,23 +141,23 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.BankExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from bank
+    select count(*) from BANK
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update bank
+    update BANK
     <set>
       <if test="record.bid != null">
-        bid = #{record.bid,jdbcType=DECIMAL},
+        BID = #{record.bid,jdbcType=DECIMAL},
       </if>
-      <if test="record.uid != null">
-        "uid" = #{record.uid,jdbcType=DECIMAL},
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=DECIMAL},
       </if>
       <if test="record.bankcard != null">
-        bankcard = #{record.bankcard,jdbcType=DECIMAL},
+        BANKCARD = #{record.bankcard,jdbcType=DECIMAL},
       </if>
     </set>
     <if test="_parameter != null">
@@ -166,32 +166,32 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update bank
-    set bid = #{record.bid,jdbcType=DECIMAL},
-      "uid" = #{record.uid,jdbcType=DECIMAL},
-      bankcard = #{record.bankcard,jdbcType=DECIMAL}
+    update BANK
+    set BID = #{record.bid,jdbcType=DECIMAL},
+      USERID = #{record.userid,jdbcType=DECIMAL},
+      BANKCARD = #{record.bankcard,jdbcType=DECIMAL}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Bank">
     <!--@mbg.generated-->
-    update bank
+    update BANK
     <set>
-      <if test="uid != null">
-        "uid" = #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=DECIMAL},
       </if>
       <if test="bankcard != null">
-        bankcard = #{bankcard,jdbcType=DECIMAL},
+        BANKCARD = #{bankcard,jdbcType=DECIMAL},
       </if>
     </set>
-    where bid = #{bid,jdbcType=DECIMAL}
+    where BID = #{bid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Bank">
     <!--@mbg.generated-->
-    update bank
-    set "uid" = #{uid,jdbcType=DECIMAL},
-      bankcard = #{bankcard,jdbcType=DECIMAL}
-    where bid = #{bid,jdbcType=DECIMAL}
+    update BANK
+    set USERID = #{userid,jdbcType=DECIMAL},
+      BANKCARD = #{bankcard,jdbcType=DECIMAL}
+    where BID = #{bid,jdbcType=DECIMAL}
   </update>
 </mapper>

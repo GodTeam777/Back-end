@@ -3,13 +3,13 @@
 <mapper namespace="com.zhaolian.demo.data.dao.HomeMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Home">
     <!--@mbg.generated-->
-    <!--@Table home-->
-    <id column="hid" jdbcType="DECIMAL" property="hid" />
-    <result column="hname" jdbcType="VARCHAR" property="hname" />
-    <result column="haddress" jdbcType="VARCHAR" property="haddress" />
-    <result column="hdate" jdbcType="TIMESTAMP" property="hdate" />
-    <result column="hpath" jdbcType="VARCHAR" property="hpath" />
-    <result column="status" jdbcType="DECIMAL" property="status" />
+    <!--@Table HOME-->
+    <id column="HID" jdbcType="DECIMAL" property="hid" />
+    <result column="HNAME" jdbcType="VARCHAR" property="hname" />
+    <result column="HADDRESS" jdbcType="VARCHAR" property="haddress" />
+    <result column="HDATE" jdbcType="TIMESTAMP" property="hdate" />
+    <result column="HPATH" jdbcType="VARCHAR" property="hpath" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -73,7 +73,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    hid, hname, haddress, hdate, hpath, "status"
+    HID, HNAME, HADDRESS, HDATE, HPATH, "STATUS"
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.HomeExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -82,7 +82,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from home
+    from HOME
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -94,25 +94,25 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from home
-    where hid = #{hid,jdbcType=DECIMAL}
+    from HOME
+    where HID = #{hid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from home
-    where hid = #{hid,jdbcType=DECIMAL}
+    delete from HOME
+    where HID = #{hid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.HomeExample">
     <!--@mbg.generated-->
-    delete from home
+    delete from HOME
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Home">
     <!--@mbg.generated-->
-    insert into home (hid, hname, haddress, 
-      hdate, hpath, "status"
+    insert into HOME (HID, HNAME, HADDRESS, 
+      HDATE, HPATH, "STATUS"
       )
     values (#{hid,jdbcType=DECIMAL}, #{hname,jdbcType=VARCHAR}, #{haddress,jdbcType=VARCHAR}, 
       #{hdate,jdbcType=TIMESTAMP}, #{hpath,jdbcType=VARCHAR}, #{status,jdbcType=DECIMAL}
@@ -120,25 +120,25 @@
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Home">
     <!--@mbg.generated-->
-    insert into home
+    insert into HOME
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="hid != null">
-        hid,
+        HID,
       </if>
       <if test="hname != null">
-        hname,
+        HNAME,
       </if>
       <if test="haddress != null">
-        haddress,
+        HADDRESS,
       </if>
       <if test="hdate != null">
-        hdate,
+        HDATE,
       </if>
       <if test="hpath != null">
-        hpath,
+        HPATH,
       </if>
       <if test="status != null">
-        "status",
+        "STATUS",
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -164,32 +164,32 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.HomeExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from home
+    select count(*) from HOME
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update home
+    update HOME
     <set>
       <if test="record.hid != null">
-        hid = #{record.hid,jdbcType=DECIMAL},
+        HID = #{record.hid,jdbcType=DECIMAL},
       </if>
       <if test="record.hname != null">
-        hname = #{record.hname,jdbcType=VARCHAR},
+        HNAME = #{record.hname,jdbcType=VARCHAR},
       </if>
       <if test="record.haddress != null">
-        haddress = #{record.haddress,jdbcType=VARCHAR},
+        HADDRESS = #{record.haddress,jdbcType=VARCHAR},
       </if>
       <if test="record.hdate != null">
-        hdate = #{record.hdate,jdbcType=TIMESTAMP},
+        HDATE = #{record.hdate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.hpath != null">
-        hpath = #{record.hpath,jdbcType=VARCHAR},
+        HPATH = #{record.hpath,jdbcType=VARCHAR},
       </if>
       <if test="record.status != null">
-        "status" = #{record.status,jdbcType=DECIMAL},
+        "STATUS" = #{record.status,jdbcType=DECIMAL},
       </if>
     </set>
     <if test="_parameter != null">
@@ -198,47 +198,47 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update home
-    set hid = #{record.hid,jdbcType=DECIMAL},
-      hname = #{record.hname,jdbcType=VARCHAR},
-      haddress = #{record.haddress,jdbcType=VARCHAR},
-      hdate = #{record.hdate,jdbcType=TIMESTAMP},
-      hpath = #{record.hpath,jdbcType=VARCHAR},
-      "status" = #{record.status,jdbcType=DECIMAL}
+    update HOME
+    set HID = #{record.hid,jdbcType=DECIMAL},
+      HNAME = #{record.hname,jdbcType=VARCHAR},
+      HADDRESS = #{record.haddress,jdbcType=VARCHAR},
+      HDATE = #{record.hdate,jdbcType=TIMESTAMP},
+      HPATH = #{record.hpath,jdbcType=VARCHAR},
+      "STATUS" = #{record.status,jdbcType=DECIMAL}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Home">
     <!--@mbg.generated-->
-    update home
+    update HOME
     <set>
       <if test="hname != null">
-        hname = #{hname,jdbcType=VARCHAR},
+        HNAME = #{hname,jdbcType=VARCHAR},
       </if>
       <if test="haddress != null">
-        haddress = #{haddress,jdbcType=VARCHAR},
+        HADDRESS = #{haddress,jdbcType=VARCHAR},
       </if>
       <if test="hdate != null">
-        hdate = #{hdate,jdbcType=TIMESTAMP},
+        HDATE = #{hdate,jdbcType=TIMESTAMP},
       </if>
       <if test="hpath != null">
-        hpath = #{hpath,jdbcType=VARCHAR},
+        HPATH = #{hpath,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
-        "status" = #{status,jdbcType=DECIMAL},
+        "STATUS" = #{status,jdbcType=DECIMAL},
       </if>
     </set>
-    where hid = #{hid,jdbcType=DECIMAL}
+    where HID = #{hid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Home">
     <!--@mbg.generated-->
-    update home
-    set hname = #{hname,jdbcType=VARCHAR},
-      haddress = #{haddress,jdbcType=VARCHAR},
-      hdate = #{hdate,jdbcType=TIMESTAMP},
-      hpath = #{hpath,jdbcType=VARCHAR},
-      "status" = #{status,jdbcType=DECIMAL}
-    where hid = #{hid,jdbcType=DECIMAL}
+    update HOME
+    set HNAME = #{hname,jdbcType=VARCHAR},
+      HADDRESS = #{haddress,jdbcType=VARCHAR},
+      HDATE = #{hdate,jdbcType=TIMESTAMP},
+      HPATH = #{hpath,jdbcType=VARCHAR},
+      "STATUS" = #{status,jdbcType=DECIMAL}
+    where HID = #{hid,jdbcType=DECIMAL}
   </update>
 </mapper>

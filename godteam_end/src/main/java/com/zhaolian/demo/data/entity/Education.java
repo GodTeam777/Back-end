@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Education implements Serializable {
-    private BigDecimal eduid;
+    private BigDecimal eduserid;
 
     private String schoolname;
 
@@ -21,12 +21,12 @@ public class Education implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public BigDecimal getEduid() {
-        return eduid;
+    public BigDecimal getEduserid() {
+        return eduserid;
     }
 
-    public void setEduid(BigDecimal eduid) {
-        this.eduid = eduid;
+    public void setEduserid(BigDecimal eduserid) {
+        this.eduserid = eduserid;
     }
 
     public String getSchoolname() {
@@ -83,7 +83,7 @@ public class Education implements Serializable {
         sb.append(getClass().getSimpleName());
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
-        sb.append(", eduid=").append(eduid);
+        sb.append(", eduserid=").append(eduserid);
         sb.append(", schoolname=").append(schoolname);
         sb.append(", beginDate=").append(beginDate);
         sb.append(", endDate=").append(endDate);

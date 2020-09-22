@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ProOrderExample {
+public class ProorderExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public ProOrderExample() {
+    public ProorderExample() {
         oredCriteria = new ArrayList<>();
     }
 
@@ -107,492 +107,492 @@ public class ProOrderExample {
         }
 
         public Criteria andPoidIsNull() {
-            addCriterion("poid is null");
+            addCriterion("POID is null");
             return (Criteria) this;
         }
 
         public Criteria andPoidIsNotNull() {
-            addCriterion("poid is not null");
+            addCriterion("POID is not null");
             return (Criteria) this;
         }
 
         public Criteria andPoidEqualTo(BigDecimal value) {
-            addCriterion("poid =", value, "poid");
+            addCriterion("POID =", value, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidNotEqualTo(BigDecimal value) {
-            addCriterion("poid <>", value, "poid");
+            addCriterion("POID <>", value, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidGreaterThan(BigDecimal value) {
-            addCriterion("poid >", value, "poid");
+            addCriterion("POID >", value, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("poid >=", value, "poid");
+            addCriterion("POID >=", value, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidLessThan(BigDecimal value) {
-            addCriterion("poid <", value, "poid");
+            addCriterion("POID <", value, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("poid <=", value, "poid");
+            addCriterion("POID <=", value, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidIn(List<BigDecimal> values) {
-            addCriterion("poid in", values, "poid");
+            addCriterion("POID in", values, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidNotIn(List<BigDecimal> values) {
-            addCriterion("poid not in", values, "poid");
+            addCriterion("POID not in", values, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("poid between", value1, value2, "poid");
+            addCriterion("POID between", value1, value2, "poid");
             return (Criteria) this;
         }
 
         public Criteria andPoidNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("poid not between", value1, value2, "poid");
+            addCriterion("POID not between", value1, value2, "poid");
             return (Criteria) this;
         }
 
         public Criteria andMpidIsNull() {
-            addCriterion("mpid is null");
+            addCriterion("MPID is null");
             return (Criteria) this;
         }
 
         public Criteria andMpidIsNotNull() {
-            addCriterion("mpid is not null");
+            addCriterion("MPID is not null");
             return (Criteria) this;
         }
 
         public Criteria andMpidEqualTo(BigDecimal value) {
-            addCriterion("mpid =", value, "mpid");
+            addCriterion("MPID =", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidNotEqualTo(BigDecimal value) {
-            addCriterion("mpid <>", value, "mpid");
+            addCriterion("MPID <>", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidGreaterThan(BigDecimal value) {
-            addCriterion("mpid >", value, "mpid");
+            addCriterion("MPID >", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("mpid >=", value, "mpid");
+            addCriterion("MPID >=", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidLessThan(BigDecimal value) {
-            addCriterion("mpid <", value, "mpid");
+            addCriterion("MPID <", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("mpid <=", value, "mpid");
+            addCriterion("MPID <=", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidIn(List<BigDecimal> values) {
-            addCriterion("mpid in", values, "mpid");
+            addCriterion("MPID in", values, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidNotIn(List<BigDecimal> values) {
-            addCriterion("mpid not in", values, "mpid");
+            addCriterion("MPID not in", values, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("mpid between", value1, value2, "mpid");
+            addCriterion("MPID between", value1, value2, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("mpid not between", value1, value2, "mpid");
+            addCriterion("MPID not between", value1, value2, "mpid");
             return (Criteria) this;
         }
 
-        public Criteria andUidIsNull() {
-            addCriterion("\"uid\" is null");
+        public Criteria andUseridIsNull() {
+            addCriterion("USERID is null");
             return (Criteria) this;
         }
 
-        public Criteria andUidIsNotNull() {
-            addCriterion("\"uid\" is not null");
+        public Criteria andUseridIsNotNull() {
+            addCriterion("USERID is not null");
             return (Criteria) this;
         }
 
-        public Criteria andUidEqualTo(BigDecimal value) {
-            addCriterion("\"uid\" =", value, "uid");
+        public Criteria andUseridEqualTo(BigDecimal value) {
+            addCriterion("USERID =", value, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidNotEqualTo(BigDecimal value) {
-            addCriterion("\"uid\" <>", value, "uid");
+        public Criteria andUseridNotEqualTo(BigDecimal value) {
+            addCriterion("USERID <>", value, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidGreaterThan(BigDecimal value) {
-            addCriterion("\"uid\" >", value, "uid");
+        public Criteria andUseridGreaterThan(BigDecimal value) {
+            addCriterion("USERID >", value, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"uid\" >=", value, "uid");
+        public Criteria andUseridGreaterThanOrEqualTo(BigDecimal value) {
+            addCriterion("USERID >=", value, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidLessThan(BigDecimal value) {
-            addCriterion("\"uid\" <", value, "uid");
+        public Criteria andUseridLessThan(BigDecimal value) {
+            addCriterion("USERID <", value, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"uid\" <=", value, "uid");
+        public Criteria andUseridLessThanOrEqualTo(BigDecimal value) {
+            addCriterion("USERID <=", value, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidIn(List<BigDecimal> values) {
-            addCriterion("\"uid\" in", values, "uid");
+        public Criteria andUseridIn(List<BigDecimal> values) {
+            addCriterion("USERID in", values, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidNotIn(List<BigDecimal> values) {
-            addCriterion("\"uid\" not in", values, "uid");
+        public Criteria andUseridNotIn(List<BigDecimal> values) {
+            addCriterion("USERID not in", values, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"uid\" between", value1, value2, "uid");
+        public Criteria andUseridBetween(BigDecimal value1, BigDecimal value2) {
+            addCriterion("USERID between", value1, value2, "userid");
             return (Criteria) this;
         }
 
-        public Criteria andUidNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"uid\" not between", value1, value2, "uid");
+        public Criteria andUseridNotBetween(BigDecimal value1, BigDecimal value2) {
+            addCriterion("USERID not between", value1, value2, "userid");
             return (Criteria) this;
         }
 
         public Criteria andMoneyIsNull() {
-            addCriterion("money is null");
+            addCriterion("MONEY is null");
             return (Criteria) this;
         }
 
         public Criteria andMoneyIsNotNull() {
-            addCriterion("money is not null");
+            addCriterion("MONEY is not null");
             return (Criteria) this;
         }
 
         public Criteria andMoneyEqualTo(BigDecimal value) {
-            addCriterion("money =", value, "money");
+            addCriterion("MONEY =", value, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyNotEqualTo(BigDecimal value) {
-            addCriterion("money <>", value, "money");
+            addCriterion("MONEY <>", value, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyGreaterThan(BigDecimal value) {
-            addCriterion("money >", value, "money");
+            addCriterion("MONEY >", value, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("money >=", value, "money");
+            addCriterion("MONEY >=", value, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyLessThan(BigDecimal value) {
-            addCriterion("money <", value, "money");
+            addCriterion("MONEY <", value, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("money <=", value, "money");
+            addCriterion("MONEY <=", value, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyIn(List<BigDecimal> values) {
-            addCriterion("money in", values, "money");
+            addCriterion("MONEY in", values, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyNotIn(List<BigDecimal> values) {
-            addCriterion("money not in", values, "money");
+            addCriterion("MONEY not in", values, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("money between", value1, value2, "money");
+            addCriterion("MONEY between", value1, value2, "money");
             return (Criteria) this;
         }
 
         public Criteria andMoneyNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("money not between", value1, value2, "money");
+            addCriterion("MONEY not between", value1, value2, "money");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateIsNull() {
-            addCriterion("licai_date is null");
+            addCriterion("LICAI_DATE is null");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateIsNotNull() {
-            addCriterion("licai_date is not null");
+            addCriterion("LICAI_DATE is not null");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateEqualTo(Date value) {
-            addCriterion("licai_date =", value, "licaiDate");
+            addCriterion("LICAI_DATE =", value, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateNotEqualTo(Date value) {
-            addCriterion("licai_date <>", value, "licaiDate");
+            addCriterion("LICAI_DATE <>", value, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateGreaterThan(Date value) {
-            addCriterion("licai_date >", value, "licaiDate");
+            addCriterion("LICAI_DATE >", value, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateGreaterThanOrEqualTo(Date value) {
-            addCriterion("licai_date >=", value, "licaiDate");
+            addCriterion("LICAI_DATE >=", value, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateLessThan(Date value) {
-            addCriterion("licai_date <", value, "licaiDate");
+            addCriterion("LICAI_DATE <", value, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateLessThanOrEqualTo(Date value) {
-            addCriterion("licai_date <=", value, "licaiDate");
+            addCriterion("LICAI_DATE <=", value, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateIn(List<Date> values) {
-            addCriterion("licai_date in", values, "licaiDate");
+            addCriterion("LICAI_DATE in", values, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateNotIn(List<Date> values) {
-            addCriterion("licai_date not in", values, "licaiDate");
+            addCriterion("LICAI_DATE not in", values, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateBetween(Date value1, Date value2) {
-            addCriterion("licai_date between", value1, value2, "licaiDate");
+            addCriterion("LICAI_DATE between", value1, value2, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andLicaiDateNotBetween(Date value1, Date value2) {
-            addCriterion("licai_date not between", value1, value2, "licaiDate");
+            addCriterion("LICAI_DATE not between", value1, value2, "licaiDate");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeIsNull() {
-            addCriterion("zhifutype is null");
+            addCriterion("ZHIFUTYPE is null");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeIsNotNull() {
-            addCriterion("zhifutype is not null");
+            addCriterion("ZHIFUTYPE is not null");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeEqualTo(String value) {
-            addCriterion("zhifutype =", value, "zhifutype");
+            addCriterion("ZHIFUTYPE =", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeNotEqualTo(String value) {
-            addCriterion("zhifutype <>", value, "zhifutype");
+            addCriterion("ZHIFUTYPE <>", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeGreaterThan(String value) {
-            addCriterion("zhifutype >", value, "zhifutype");
+            addCriterion("ZHIFUTYPE >", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeGreaterThanOrEqualTo(String value) {
-            addCriterion("zhifutype >=", value, "zhifutype");
+            addCriterion("ZHIFUTYPE >=", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeLessThan(String value) {
-            addCriterion("zhifutype <", value, "zhifutype");
+            addCriterion("ZHIFUTYPE <", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeLessThanOrEqualTo(String value) {
-            addCriterion("zhifutype <=", value, "zhifutype");
+            addCriterion("ZHIFUTYPE <=", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeLike(String value) {
-            addCriterion("zhifutype like", value, "zhifutype");
+            addCriterion("ZHIFUTYPE like", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeNotLike(String value) {
-            addCriterion("zhifutype not like", value, "zhifutype");
+            addCriterion("ZHIFUTYPE not like", value, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeIn(List<String> values) {
-            addCriterion("zhifutype in", values, "zhifutype");
+            addCriterion("ZHIFUTYPE in", values, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeNotIn(List<String> values) {
-            addCriterion("zhifutype not in", values, "zhifutype");
+            addCriterion("ZHIFUTYPE not in", values, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeBetween(String value1, String value2) {
-            addCriterion("zhifutype between", value1, value2, "zhifutype");
+            addCriterion("ZHIFUTYPE between", value1, value2, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andZhifutypeNotBetween(String value1, String value2) {
-            addCriterion("zhifutype not between", value1, value2, "zhifutype");
+            addCriterion("ZHIFUTYPE not between", value1, value2, "zhifutype");
             return (Criteria) this;
         }
 
         public Criteria andShouDateIsNull() {
-            addCriterion("shou_date is null");
+            addCriterion("SHOU_DATE is null");
             return (Criteria) this;
         }
 
         public Criteria andShouDateIsNotNull() {
-            addCriterion("shou_date is not null");
+            addCriterion("SHOU_DATE is not null");
             return (Criteria) this;
         }
 
         public Criteria andShouDateEqualTo(Date value) {
-            addCriterion("shou_date =", value, "shouDate");
+            addCriterion("SHOU_DATE =", value, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateNotEqualTo(Date value) {
-            addCriterion("shou_date <>", value, "shouDate");
+            addCriterion("SHOU_DATE <>", value, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateGreaterThan(Date value) {
-            addCriterion("shou_date >", value, "shouDate");
+            addCriterion("SHOU_DATE >", value, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateGreaterThanOrEqualTo(Date value) {
-            addCriterion("shou_date >=", value, "shouDate");
+            addCriterion("SHOU_DATE >=", value, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateLessThan(Date value) {
-            addCriterion("shou_date <", value, "shouDate");
+            addCriterion("SHOU_DATE <", value, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateLessThanOrEqualTo(Date value) {
-            addCriterion("shou_date <=", value, "shouDate");
+            addCriterion("SHOU_DATE <=", value, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateIn(List<Date> values) {
-            addCriterion("shou_date in", values, "shouDate");
+            addCriterion("SHOU_DATE in", values, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateNotIn(List<Date> values) {
-            addCriterion("shou_date not in", values, "shouDate");
+            addCriterion("SHOU_DATE not in", values, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateBetween(Date value1, Date value2) {
-            addCriterion("shou_date between", value1, value2, "shouDate");
+            addCriterion("SHOU_DATE between", value1, value2, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andShouDateNotBetween(Date value1, Date value2) {
-            addCriterion("shou_date not between", value1, value2, "shouDate");
+            addCriterion("SHOU_DATE not between", value1, value2, "shouDate");
             return (Criteria) this;
         }
 
         public Criteria andStatusIsNull() {
-            addCriterion("\"status\" is null");
+            addCriterion("\"STATUS\" is null");
             return (Criteria) this;
         }
 
         public Criteria andStatusIsNotNull() {
-            addCriterion("\"status\" is not null");
+            addCriterion("\"STATUS\" is not null");
             return (Criteria) this;
         }
 
         public Criteria andStatusEqualTo(BigDecimal value) {
-            addCriterion("\"status\" =", value, "status");
+            addCriterion("\"STATUS\" =", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotEqualTo(BigDecimal value) {
-            addCriterion("\"status\" <>", value, "status");
+            addCriterion("\"STATUS\" <>", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusGreaterThan(BigDecimal value) {
-            addCriterion("\"status\" >", value, "status");
+            addCriterion("\"STATUS\" >", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"status\" >=", value, "status");
+            addCriterion("\"STATUS\" >=", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusLessThan(BigDecimal value) {
-            addCriterion("\"status\" <", value, "status");
+            addCriterion("\"STATUS\" <", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"status\" <=", value, "status");
+            addCriterion("\"STATUS\" <=", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusIn(List<BigDecimal> values) {
-            addCriterion("\"status\" in", values, "status");
+            addCriterion("\"STATUS\" in", values, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotIn(List<BigDecimal> values) {
-            addCriterion("\"status\" not in", values, "status");
+            addCriterion("\"STATUS\" not in", values, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"status\" between", value1, value2, "status");
+            addCriterion("\"STATUS\" between", value1, value2, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"status\" not between", value1, value2, "status");
+            addCriterion("\"STATUS\" not between", value1, value2, "status");
             return (Criteria) this;
         }
     }

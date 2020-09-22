@@ -3,14 +3,14 @@
 <mapper namespace="com.zhaolian.demo.data.dao.SmallhuankuanMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Smallhuankuan">
     <!--@mbg.generated-->
-    <!--@Table smallhuankuan-->
-    <id column="hid" jdbcType="DECIMAL" property="hid" />
-    <result column="sdoid" jdbcType="DECIMAL" property="sdoid" />
-    <result column="liushui" jdbcType="DECIMAL" property="liushui" />
-    <result column="ordercard" jdbcType="DECIMAL" property="ordercard" />
-    <result column="zhifutype" jdbcType="VARCHAR" property="zhifutype" />
-    <result column="money" jdbcType="DECIMAL" property="money" />
-    <result column="huan_date" jdbcType="TIMESTAMP" property="huanDate" />
+    <!--@Table SMALLHUANKUAN-->
+    <id column="HID" jdbcType="DECIMAL" property="hid" />
+    <result column="SDOID" jdbcType="DECIMAL" property="sdoid" />
+    <result column="LIUSHUI" jdbcType="DECIMAL" property="liushui" />
+    <result column="ORDERCARD" jdbcType="DECIMAL" property="ordercard" />
+    <result column="ZHIFUTYPE" jdbcType="VARCHAR" property="zhifutype" />
+    <result column="MONEY" jdbcType="DECIMAL" property="money" />
+    <result column="HUAN_DATE" jdbcType="TIMESTAMP" property="huanDate" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -74,7 +74,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    hid, sdoid, liushui, ordercard, zhifutype, money, huan_date
+    HID, SDOID, LIUSHUI, ORDERCARD, ZHIFUTYPE, MONEY, HUAN_DATE
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.SmallhuankuanExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -83,7 +83,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from smallhuankuan
+    from SMALLHUANKUAN
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -95,54 +95,54 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from smallhuankuan
-    where hid = #{hid,jdbcType=DECIMAL}
+    from SMALLHUANKUAN
+    where HID = #{hid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from smallhuankuan
-    where hid = #{hid,jdbcType=DECIMAL}
+    delete from SMALLHUANKUAN
+    where HID = #{hid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.SmallhuankuanExample">
     <!--@mbg.generated-->
-    delete from smallhuankuan
+    delete from SMALLHUANKUAN
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Smallhuankuan">
     <!--@mbg.generated-->
-    insert into smallhuankuan (hid, sdoid, liushui, 
-      ordercard, zhifutype, money, 
-      huan_date)
+    insert into SMALLHUANKUAN (HID, SDOID, LIUSHUI, 
+      ORDERCARD, ZHIFUTYPE, MONEY, 
+      HUAN_DATE)
     values (#{hid,jdbcType=DECIMAL}, #{sdoid,jdbcType=DECIMAL}, #{liushui,jdbcType=DECIMAL}, 
       #{ordercard,jdbcType=DECIMAL}, #{zhifutype,jdbcType=VARCHAR}, #{money,jdbcType=DECIMAL}, 
       #{huanDate,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Smallhuankuan">
     <!--@mbg.generated-->
-    insert into smallhuankuan
+    insert into SMALLHUANKUAN
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="hid != null">
-        hid,
+        HID,
       </if>
       <if test="sdoid != null">
-        sdoid,
+        SDOID,
       </if>
       <if test="liushui != null">
-        liushui,
+        LIUSHUI,
       </if>
       <if test="ordercard != null">
-        ordercard,
+        ORDERCARD,
       </if>
       <if test="zhifutype != null">
-        zhifutype,
+        ZHIFUTYPE,
       </if>
       <if test="money != null">
-        money,
+        MONEY,
       </if>
       <if test="huanDate != null">
-        huan_date,
+        HUAN_DATE,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -171,35 +171,35 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.SmallhuankuanExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from smallhuankuan
+    select count(*) from SMALLHUANKUAN
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update smallhuankuan
+    update SMALLHUANKUAN
     <set>
       <if test="record.hid != null">
-        hid = #{record.hid,jdbcType=DECIMAL},
+        HID = #{record.hid,jdbcType=DECIMAL},
       </if>
       <if test="record.sdoid != null">
-        sdoid = #{record.sdoid,jdbcType=DECIMAL},
+        SDOID = #{record.sdoid,jdbcType=DECIMAL},
       </if>
       <if test="record.liushui != null">
-        liushui = #{record.liushui,jdbcType=DECIMAL},
+        LIUSHUI = #{record.liushui,jdbcType=DECIMAL},
       </if>
       <if test="record.ordercard != null">
-        ordercard = #{record.ordercard,jdbcType=DECIMAL},
+        ORDERCARD = #{record.ordercard,jdbcType=DECIMAL},
       </if>
       <if test="record.zhifutype != null">
-        zhifutype = #{record.zhifutype,jdbcType=VARCHAR},
+        ZHIFUTYPE = #{record.zhifutype,jdbcType=VARCHAR},
       </if>
       <if test="record.money != null">
-        money = #{record.money,jdbcType=DECIMAL},
+        MONEY = #{record.money,jdbcType=DECIMAL},
       </if>
       <if test="record.huanDate != null">
-        huan_date = #{record.huanDate,jdbcType=TIMESTAMP},
+        HUAN_DATE = #{record.huanDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -208,52 +208,52 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update smallhuankuan
-    set hid = #{record.hid,jdbcType=DECIMAL},
-      sdoid = #{record.sdoid,jdbcType=DECIMAL},
-      liushui = #{record.liushui,jdbcType=DECIMAL},
-      ordercard = #{record.ordercard,jdbcType=DECIMAL},
-      zhifutype = #{record.zhifutype,jdbcType=VARCHAR},
-      money = #{record.money,jdbcType=DECIMAL},
-      huan_date = #{record.huanDate,jdbcType=TIMESTAMP}
+    update SMALLHUANKUAN
+    set HID = #{record.hid,jdbcType=DECIMAL},
+      SDOID = #{record.sdoid,jdbcType=DECIMAL},
+      LIUSHUI = #{record.liushui,jdbcType=DECIMAL},
+      ORDERCARD = #{record.ordercard,jdbcType=DECIMAL},
+      ZHIFUTYPE = #{record.zhifutype,jdbcType=VARCHAR},
+      MONEY = #{record.money,jdbcType=DECIMAL},
+      HUAN_DATE = #{record.huanDate,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Smallhuankuan">
     <!--@mbg.generated-->
-    update smallhuankuan
+    update SMALLHUANKUAN
     <set>
       <if test="sdoid != null">
-        sdoid = #{sdoid,jdbcType=DECIMAL},
+        SDOID = #{sdoid,jdbcType=DECIMAL},
       </if>
       <if test="liushui != null">
-        liushui = #{liushui,jdbcType=DECIMAL},
+        LIUSHUI = #{liushui,jdbcType=DECIMAL},
       </if>
       <if test="ordercard != null">
-        ordercard = #{ordercard,jdbcType=DECIMAL},
+        ORDERCARD = #{ordercard,jdbcType=DECIMAL},
       </if>
       <if test="zhifutype != null">
-        zhifutype = #{zhifutype,jdbcType=VARCHAR},
+        ZHIFUTYPE = #{zhifutype,jdbcType=VARCHAR},
       </if>
       <if test="money != null">
-        money = #{money,jdbcType=DECIMAL},
+        MONEY = #{money,jdbcType=DECIMAL},
       </if>
       <if test="huanDate != null">
-        huan_date = #{huanDate,jdbcType=TIMESTAMP},
+        HUAN_DATE = #{huanDate,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where hid = #{hid,jdbcType=DECIMAL}
+    where HID = #{hid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Smallhuankuan">
     <!--@mbg.generated-->
-    update smallhuankuan
-    set sdoid = #{sdoid,jdbcType=DECIMAL},
-      liushui = #{liushui,jdbcType=DECIMAL},
-      ordercard = #{ordercard,jdbcType=DECIMAL},
-      zhifutype = #{zhifutype,jdbcType=VARCHAR},
-      money = #{money,jdbcType=DECIMAL},
-      huan_date = #{huanDate,jdbcType=TIMESTAMP}
-    where hid = #{hid,jdbcType=DECIMAL}
+    update SMALLHUANKUAN
+    set SDOID = #{sdoid,jdbcType=DECIMAL},
+      LIUSHUI = #{liushui,jdbcType=DECIMAL},
+      ORDERCARD = #{ordercard,jdbcType=DECIMAL},
+      ZHIFUTYPE = #{zhifutype,jdbcType=VARCHAR},
+      MONEY = #{money,jdbcType=DECIMAL},
+      HUAN_DATE = #{huanDate,jdbcType=TIMESTAMP}
+    where HID = #{hid,jdbcType=DECIMAL}
   </update>
 </mapper>

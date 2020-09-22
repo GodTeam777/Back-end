@@ -13,7 +13,7 @@ public interface EducationMapper {
 
     int deleteByExample(EducationExample example);
 
-    int deleteByPrimaryKey(BigDecimal eduid);
+    int deleteByPrimaryKey(BigDecimal eduserid);
 
     int insert(Education record);
 
@@ -21,7 +21,7 @@ public interface EducationMapper {
 
     List<Education> selectByExample(EducationExample example);
 
-    Education selectByPrimaryKey(BigDecimal eduid);
+    Education selectByPrimaryKey(BigDecimal eduserid);
 
     int updateByExampleSelective(@Param("record") Education record, @Param("example") EducationExample example);
 

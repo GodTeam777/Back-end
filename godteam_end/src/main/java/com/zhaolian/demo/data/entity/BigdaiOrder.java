@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class BigdaiOrder implements Serializable {
+public class Bigdaiorder implements Serializable {
     private BigDecimal boid;
 
-    private BigDecimal uid;
+    private BigDecimal userid;
 
     private BigDecimal bdid;
 
@@ -37,12 +37,12 @@ public class BigdaiOrder implements Serializable {
         this.boid = boid;
     }
 
-    public BigDecimal getUid() {
-        return uid;
+    public BigDecimal getUserid() {
+        return userid;
     }
 
-    public void setUid(BigDecimal uid) {
-        this.uid = uid;
+    public void setUserid(BigDecimal userid) {
+        this.userid = userid;
     }
 
     public BigDecimal getBdid() {
@@ -124,7 +124,7 @@ public class BigdaiOrder implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", boid=").append(boid);
-        sb.append(", uid=").append(uid);
+        sb.append(", userid=").append(userid);
         sb.append(", bdid=").append(bdid);
         sb.append(", bigmoney=").append(bigmoney);
         sb.append(", bigdaiDate=").append(bigdaiDate);

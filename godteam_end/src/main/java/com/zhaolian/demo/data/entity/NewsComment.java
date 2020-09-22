@@ -7,7 +7,7 @@ import java.util.Date;
 public class NewsComment implements Serializable {
     private BigDecimal ncid;
 
-    private BigDecimal uid;
+    private BigDecimal userid;
 
     private BigDecimal nid;
 
@@ -25,12 +25,12 @@ public class NewsComment implements Serializable {
         this.ncid = ncid;
     }
 
-    public BigDecimal getUid() {
-        return uid;
+    public BigDecimal getUserid() {
+        return userid;
     }
 
-    public void setUid(BigDecimal uid) {
-        this.uid = uid;
+    public void setUserid(BigDecimal userid) {
+        this.userid = userid;
     }
 
     public BigDecimal getNid() {
@@ -64,7 +64,7 @@ public class NewsComment implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", ncid=").append(ncid);
-        sb.append(", uid=").append(uid);
+        sb.append(", userid=").append(userid);
         sb.append(", nid=").append(nid);
         sb.append(", text=").append(text);
         sb.append(", commentDate=").append(commentDate);

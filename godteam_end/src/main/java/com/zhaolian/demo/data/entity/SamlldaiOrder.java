@@ -7,7 +7,7 @@ import java.util.Date;
 public class SamlldaiOrder implements Serializable {
     private BigDecimal sdoid;
 
-    private BigDecimal uid;
+    private BigDecimal userid;
 
     private BigDecimal daimoney;
 
@@ -33,12 +33,12 @@ public class SamlldaiOrder implements Serializable {
         this.sdoid = sdoid;
     }
 
-    public BigDecimal getUid() {
-        return uid;
+    public BigDecimal getUserid() {
+        return userid;
     }
 
-    public void setUid(BigDecimal uid) {
-        this.uid = uid;
+    public void setUserid(BigDecimal userid) {
+        this.userid = userid;
     }
 
     public BigDecimal getDaimoney() {
@@ -104,7 +104,7 @@ public class SamlldaiOrder implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", sdoid=").append(sdoid);
-        sb.append(", uid=").append(uid);
+        sb.append(", userid=").append(userid);
         sb.append(", daimoney=").append(daimoney);
         sb.append(", shouCard=").append(shouCard);
         sb.append(", huanCard=").append(huanCard);

@@ -107,392 +107,392 @@ public class HomeExample {
         }
 
         public Criteria andHidIsNull() {
-            addCriterion("hid is null");
+            addCriterion("HID is null");
             return (Criteria) this;
         }
 
         public Criteria andHidIsNotNull() {
-            addCriterion("hid is not null");
+            addCriterion("HID is not null");
             return (Criteria) this;
         }
 
         public Criteria andHidEqualTo(BigDecimal value) {
-            addCriterion("hid =", value, "hid");
+            addCriterion("HID =", value, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidNotEqualTo(BigDecimal value) {
-            addCriterion("hid <>", value, "hid");
+            addCriterion("HID <>", value, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidGreaterThan(BigDecimal value) {
-            addCriterion("hid >", value, "hid");
+            addCriterion("HID >", value, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("hid >=", value, "hid");
+            addCriterion("HID >=", value, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidLessThan(BigDecimal value) {
-            addCriterion("hid <", value, "hid");
+            addCriterion("HID <", value, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("hid <=", value, "hid");
+            addCriterion("HID <=", value, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidIn(List<BigDecimal> values) {
-            addCriterion("hid in", values, "hid");
+            addCriterion("HID in", values, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidNotIn(List<BigDecimal> values) {
-            addCriterion("hid not in", values, "hid");
+            addCriterion("HID not in", values, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("hid between", value1, value2, "hid");
+            addCriterion("HID between", value1, value2, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHidNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("hid not between", value1, value2, "hid");
+            addCriterion("HID not between", value1, value2, "hid");
             return (Criteria) this;
         }
 
         public Criteria andHnameIsNull() {
-            addCriterion("hname is null");
+            addCriterion("HNAME is null");
             return (Criteria) this;
         }
 
         public Criteria andHnameIsNotNull() {
-            addCriterion("hname is not null");
+            addCriterion("HNAME is not null");
             return (Criteria) this;
         }
 
         public Criteria andHnameEqualTo(String value) {
-            addCriterion("hname =", value, "hname");
+            addCriterion("HNAME =", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameNotEqualTo(String value) {
-            addCriterion("hname <>", value, "hname");
+            addCriterion("HNAME <>", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameGreaterThan(String value) {
-            addCriterion("hname >", value, "hname");
+            addCriterion("HNAME >", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameGreaterThanOrEqualTo(String value) {
-            addCriterion("hname >=", value, "hname");
+            addCriterion("HNAME >=", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameLessThan(String value) {
-            addCriterion("hname <", value, "hname");
+            addCriterion("HNAME <", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameLessThanOrEqualTo(String value) {
-            addCriterion("hname <=", value, "hname");
+            addCriterion("HNAME <=", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameLike(String value) {
-            addCriterion("hname like", value, "hname");
+            addCriterion("HNAME like", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameNotLike(String value) {
-            addCriterion("hname not like", value, "hname");
+            addCriterion("HNAME not like", value, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameIn(List<String> values) {
-            addCriterion("hname in", values, "hname");
+            addCriterion("HNAME in", values, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameNotIn(List<String> values) {
-            addCriterion("hname not in", values, "hname");
+            addCriterion("HNAME not in", values, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameBetween(String value1, String value2) {
-            addCriterion("hname between", value1, value2, "hname");
+            addCriterion("HNAME between", value1, value2, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHnameNotBetween(String value1, String value2) {
-            addCriterion("hname not between", value1, value2, "hname");
+            addCriterion("HNAME not between", value1, value2, "hname");
             return (Criteria) this;
         }
 
         public Criteria andHaddressIsNull() {
-            addCriterion("haddress is null");
+            addCriterion("HADDRESS is null");
             return (Criteria) this;
         }
 
         public Criteria andHaddressIsNotNull() {
-            addCriterion("haddress is not null");
+            addCriterion("HADDRESS is not null");
             return (Criteria) this;
         }
 
         public Criteria andHaddressEqualTo(String value) {
-            addCriterion("haddress =", value, "haddress");
+            addCriterion("HADDRESS =", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressNotEqualTo(String value) {
-            addCriterion("haddress <>", value, "haddress");
+            addCriterion("HADDRESS <>", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressGreaterThan(String value) {
-            addCriterion("haddress >", value, "haddress");
+            addCriterion("HADDRESS >", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressGreaterThanOrEqualTo(String value) {
-            addCriterion("haddress >=", value, "haddress");
+            addCriterion("HADDRESS >=", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressLessThan(String value) {
-            addCriterion("haddress <", value, "haddress");
+            addCriterion("HADDRESS <", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressLessThanOrEqualTo(String value) {
-            addCriterion("haddress <=", value, "haddress");
+            addCriterion("HADDRESS <=", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressLike(String value) {
-            addCriterion("haddress like", value, "haddress");
+            addCriterion("HADDRESS like", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressNotLike(String value) {
-            addCriterion("haddress not like", value, "haddress");
+            addCriterion("HADDRESS not like", value, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressIn(List<String> values) {
-            addCriterion("haddress in", values, "haddress");
+            addCriterion("HADDRESS in", values, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressNotIn(List<String> values) {
-            addCriterion("haddress not in", values, "haddress");
+            addCriterion("HADDRESS not in", values, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressBetween(String value1, String value2) {
-            addCriterion("haddress between", value1, value2, "haddress");
+            addCriterion("HADDRESS between", value1, value2, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHaddressNotBetween(String value1, String value2) {
-            addCriterion("haddress not between", value1, value2, "haddress");
+            addCriterion("HADDRESS not between", value1, value2, "haddress");
             return (Criteria) this;
         }
 
         public Criteria andHdateIsNull() {
-            addCriterion("hdate is null");
+            addCriterion("HDATE is null");
             return (Criteria) this;
         }
 
         public Criteria andHdateIsNotNull() {
-            addCriterion("hdate is not null");
+            addCriterion("HDATE is not null");
             return (Criteria) this;
         }
 
         public Criteria andHdateEqualTo(Date value) {
-            addCriterion("hdate =", value, "hdate");
+            addCriterion("HDATE =", value, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateNotEqualTo(Date value) {
-            addCriterion("hdate <>", value, "hdate");
+            addCriterion("HDATE <>", value, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateGreaterThan(Date value) {
-            addCriterion("hdate >", value, "hdate");
+            addCriterion("HDATE >", value, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateGreaterThanOrEqualTo(Date value) {
-            addCriterion("hdate >=", value, "hdate");
+            addCriterion("HDATE >=", value, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateLessThan(Date value) {
-            addCriterion("hdate <", value, "hdate");
+            addCriterion("HDATE <", value, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateLessThanOrEqualTo(Date value) {
-            addCriterion("hdate <=", value, "hdate");
+            addCriterion("HDATE <=", value, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateIn(List<Date> values) {
-            addCriterion("hdate in", values, "hdate");
+            addCriterion("HDATE in", values, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateNotIn(List<Date> values) {
-            addCriterion("hdate not in", values, "hdate");
+            addCriterion("HDATE not in", values, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateBetween(Date value1, Date value2) {
-            addCriterion("hdate between", value1, value2, "hdate");
+            addCriterion("HDATE between", value1, value2, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHdateNotBetween(Date value1, Date value2) {
-            addCriterion("hdate not between", value1, value2, "hdate");
+            addCriterion("HDATE not between", value1, value2, "hdate");
             return (Criteria) this;
         }
 
         public Criteria andHpathIsNull() {
-            addCriterion("hpath is null");
+            addCriterion("HPATH is null");
             return (Criteria) this;
         }
 
         public Criteria andHpathIsNotNull() {
-            addCriterion("hpath is not null");
+            addCriterion("HPATH is not null");
             return (Criteria) this;
         }
 
         public Criteria andHpathEqualTo(String value) {
-            addCriterion("hpath =", value, "hpath");
+            addCriterion("HPATH =", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathNotEqualTo(String value) {
-            addCriterion("hpath <>", value, "hpath");
+            addCriterion("HPATH <>", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathGreaterThan(String value) {
-            addCriterion("hpath >", value, "hpath");
+            addCriterion("HPATH >", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathGreaterThanOrEqualTo(String value) {
-            addCriterion("hpath >=", value, "hpath");
+            addCriterion("HPATH >=", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathLessThan(String value) {
-            addCriterion("hpath <", value, "hpath");
+            addCriterion("HPATH <", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathLessThanOrEqualTo(String value) {
-            addCriterion("hpath <=", value, "hpath");
+            addCriterion("HPATH <=", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathLike(String value) {
-            addCriterion("hpath like", value, "hpath");
+            addCriterion("HPATH like", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathNotLike(String value) {
-            addCriterion("hpath not like", value, "hpath");
+            addCriterion("HPATH not like", value, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathIn(List<String> values) {
-            addCriterion("hpath in", values, "hpath");
+            addCriterion("HPATH in", values, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathNotIn(List<String> values) {
-            addCriterion("hpath not in", values, "hpath");
+            addCriterion("HPATH not in", values, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathBetween(String value1, String value2) {
-            addCriterion("hpath between", value1, value2, "hpath");
+            addCriterion("HPATH between", value1, value2, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andHpathNotBetween(String value1, String value2) {
-            addCriterion("hpath not between", value1, value2, "hpath");
+            addCriterion("HPATH not between", value1, value2, "hpath");
             return (Criteria) this;
         }
 
         public Criteria andStatusIsNull() {
-            addCriterion("\"status\" is null");
+            addCriterion("\"STATUS\" is null");
             return (Criteria) this;
         }
 
         public Criteria andStatusIsNotNull() {
-            addCriterion("\"status\" is not null");
+            addCriterion("\"STATUS\" is not null");
             return (Criteria) this;
         }
 
         public Criteria andStatusEqualTo(BigDecimal value) {
-            addCriterion("\"status\" =", value, "status");
+            addCriterion("\"STATUS\" =", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotEqualTo(BigDecimal value) {
-            addCriterion("\"status\" <>", value, "status");
+            addCriterion("\"STATUS\" <>", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusGreaterThan(BigDecimal value) {
-            addCriterion("\"status\" >", value, "status");
+            addCriterion("\"STATUS\" >", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"status\" >=", value, "status");
+            addCriterion("\"STATUS\" >=", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusLessThan(BigDecimal value) {
-            addCriterion("\"status\" <", value, "status");
+            addCriterion("\"STATUS\" <", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"status\" <=", value, "status");
+            addCriterion("\"STATUS\" <=", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusIn(List<BigDecimal> values) {
-            addCriterion("\"status\" in", values, "status");
+            addCriterion("\"STATUS\" in", values, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotIn(List<BigDecimal> values) {
-            addCriterion("\"status\" not in", values, "status");
+            addCriterion("\"STATUS\" not in", values, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"status\" between", value1, value2, "status");
+            addCriterion("\"STATUS\" between", value1, value2, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"status\" not between", value1, value2, "status");
+            addCriterion("\"STATUS\" not between", value1, value2, "status");
             return (Criteria) this;
         }
     }

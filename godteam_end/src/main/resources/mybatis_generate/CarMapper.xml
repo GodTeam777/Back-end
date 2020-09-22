@@ -3,13 +3,13 @@
 <mapper namespace="com.zhaolian.demo.data.dao.CarMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Car">
     <!--@mbg.generated-->
-    <!--@Table car-->
-    <id column="cid" jdbcType="DECIMAL" property="cid" />
-    <result column="carbrand" jdbcType="VARCHAR" property="carbrand" />
-    <result column="carid" jdbcType="VARCHAR" property="carid" />
-    <result column="caraddress" jdbcType="VARCHAR" property="caraddress" />
-    <result column="cpath" jdbcType="VARCHAR" property="cpath" />
-    <result column="status" jdbcType="DECIMAL" property="status" />
+    <!--@Table CAR-->
+    <id column="CID" jdbcType="DECIMAL" property="cid" />
+    <result column="CARBRAND" jdbcType="VARCHAR" property="carbrand" />
+    <result column="CARID" jdbcType="VARCHAR" property="carid" />
+    <result column="CARADDRESS" jdbcType="VARCHAR" property="caraddress" />
+    <result column="CPATH" jdbcType="VARCHAR" property="cpath" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -73,7 +73,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    cid, carbrand, carid, caraddress, cpath, "status"
+    CID, CARBRAND, CARID, CARADDRESS, CPATH, "STATUS"
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.CarExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -82,7 +82,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from car
+    from CAR
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -94,25 +94,25 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from car
-    where cid = #{cid,jdbcType=DECIMAL}
+    from CAR
+    where CID = #{cid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from car
-    where cid = #{cid,jdbcType=DECIMAL}
+    delete from CAR
+    where CID = #{cid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.CarExample">
     <!--@mbg.generated-->
-    delete from car
+    delete from CAR
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Car">
     <!--@mbg.generated-->
-    insert into car (cid, carbrand, carid, 
-      caraddress, cpath, "status"
+    insert into CAR (CID, CARBRAND, CARID, 
+      CARADDRESS, CPATH, "STATUS"
       )
     values (#{cid,jdbcType=DECIMAL}, #{carbrand,jdbcType=VARCHAR}, #{carid,jdbcType=VARCHAR}, 
       #{caraddress,jdbcType=VARCHAR}, #{cpath,jdbcType=VARCHAR}, #{status,jdbcType=DECIMAL}
@@ -120,25 +120,25 @@
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Car">
     <!--@mbg.generated-->
-    insert into car
+    insert into CAR
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="cid != null">
-        cid,
+        CID,
       </if>
       <if test="carbrand != null">
-        carbrand,
+        CARBRAND,
       </if>
       <if test="carid != null">
-        carid,
+        CARID,
       </if>
       <if test="caraddress != null">
-        caraddress,
+        CARADDRESS,
       </if>
       <if test="cpath != null">
-        cpath,
+        CPATH,
       </if>
       <if test="status != null">
-        "status",
+        "STATUS",
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -164,32 +164,32 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.CarExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from car
+    select count(*) from CAR
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update car
+    update CAR
     <set>
       <if test="record.cid != null">
-        cid = #{record.cid,jdbcType=DECIMAL},
+        CID = #{record.cid,jdbcType=DECIMAL},
       </if>
       <if test="record.carbrand != null">
-        carbrand = #{record.carbrand,jdbcType=VARCHAR},
+        CARBRAND = #{record.carbrand,jdbcType=VARCHAR},
       </if>
       <if test="record.carid != null">
-        carid = #{record.carid,jdbcType=VARCHAR},
+        CARID = #{record.carid,jdbcType=VARCHAR},
       </if>
       <if test="record.caraddress != null">
-        caraddress = #{record.caraddress,jdbcType=VARCHAR},
+        CARADDRESS = #{record.caraddress,jdbcType=VARCHAR},
       </if>
       <if test="record.cpath != null">
-        cpath = #{record.cpath,jdbcType=VARCHAR},
+        CPATH = #{record.cpath,jdbcType=VARCHAR},
       </if>
       <if test="record.status != null">
-        "status" = #{record.status,jdbcType=DECIMAL},
+        "STATUS" = #{record.status,jdbcType=DECIMAL},
       </if>
     </set>
     <if test="_parameter != null">
@@ -198,47 +198,47 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update car
-    set cid = #{record.cid,jdbcType=DECIMAL},
-      carbrand = #{record.carbrand,jdbcType=VARCHAR},
-      carid = #{record.carid,jdbcType=VARCHAR},
-      caraddress = #{record.caraddress,jdbcType=VARCHAR},
-      cpath = #{record.cpath,jdbcType=VARCHAR},
-      "status" = #{record.status,jdbcType=DECIMAL}
+    update CAR
+    set CID = #{record.cid,jdbcType=DECIMAL},
+      CARBRAND = #{record.carbrand,jdbcType=VARCHAR},
+      CARID = #{record.carid,jdbcType=VARCHAR},
+      CARADDRESS = #{record.caraddress,jdbcType=VARCHAR},
+      CPATH = #{record.cpath,jdbcType=VARCHAR},
+      "STATUS" = #{record.status,jdbcType=DECIMAL}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Car">
     <!--@mbg.generated-->
-    update car
+    update CAR
     <set>
       <if test="carbrand != null">
-        carbrand = #{carbrand,jdbcType=VARCHAR},
+        CARBRAND = #{carbrand,jdbcType=VARCHAR},
       </if>
       <if test="carid != null">
-        carid = #{carid,jdbcType=VARCHAR},
+        CARID = #{carid,jdbcType=VARCHAR},
       </if>
       <if test="caraddress != null">
-        caraddress = #{caraddress,jdbcType=VARCHAR},
+        CARADDRESS = #{caraddress,jdbcType=VARCHAR},
       </if>
       <if test="cpath != null">
-        cpath = #{cpath,jdbcType=VARCHAR},
+        CPATH = #{cpath,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
-        "status" = #{status,jdbcType=DECIMAL},
+        "STATUS" = #{status,jdbcType=DECIMAL},
       </if>
     </set>
-    where cid = #{cid,jdbcType=DECIMAL}
+    where CID = #{cid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Car">
     <!--@mbg.generated-->
-    update car
-    set carbrand = #{carbrand,jdbcType=VARCHAR},
-      carid = #{carid,jdbcType=VARCHAR},
-      caraddress = #{caraddress,jdbcType=VARCHAR},
-      cpath = #{cpath,jdbcType=VARCHAR},
-      "status" = #{status,jdbcType=DECIMAL}
-    where cid = #{cid,jdbcType=DECIMAL}
+    update CAR
+    set CARBRAND = #{carbrand,jdbcType=VARCHAR},
+      CARID = #{carid,jdbcType=VARCHAR},
+      CARADDRESS = #{caraddress,jdbcType=VARCHAR},
+      CPATH = #{cpath,jdbcType=VARCHAR},
+      "STATUS" = #{status,jdbcType=DECIMAL}
+    where CID = #{cid,jdbcType=DECIMAL}
   </update>
 </mapper>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhaolian.demo.data.dao.BigdaiOrderMapper">
-  <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.BigdaiOrder">
+<mapper namespace="com.zhaolian.demo.data.dao.BigdaiorderMapper">
+  <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Bigdaiorder">
     <!--@mbg.generated-->
-    <!--@Table bigdaiOrder-->
-    <id column="boid" jdbcType="DECIMAL" property="boid" />
-    <result column="uid" jdbcType="DECIMAL" property="uid" />
-    <result column="bdid" jdbcType="DECIMAL" property="bdid" />
-    <result column="bigmoney" jdbcType="DECIMAL" property="bigmoney" />
-    <result column="bigdai_date" jdbcType="DECIMAL" property="bigdaiDate" />
-    <result column="yihuan" jdbcType="DECIMAL" property="yihuan" />
-    <result column="huan_card" jdbcType="DECIMAL" property="huanCard" />
-    <result column="shou_card" jdbcType="DECIMAL" property="shouCard" />
-    <result column="dai_date" jdbcType="TIMESTAMP" property="daiDate" />
-    <result column="onemoney" jdbcType="DECIMAL" property="onemoney" />
-    <result column="status" jdbcType="DECIMAL" property="status" />
+    <!--@Table BIGDAIORDER-->
+    <id column="BOID" jdbcType="DECIMAL" property="boid" />
+    <result column="USERID" jdbcType="DECIMAL" property="userid" />
+    <result column="BDID" jdbcType="DECIMAL" property="bdid" />
+    <result column="BIGMONEY" jdbcType="DECIMAL" property="bigmoney" />
+    <result column="BIGDAI_DATE" jdbcType="DECIMAL" property="bigdaiDate" />
+    <result column="YIHUAN" jdbcType="DECIMAL" property="yihuan" />
+    <result column="HUAN_CARD" jdbcType="DECIMAL" property="huanCard" />
+    <result column="SHOU_CARD" jdbcType="DECIMAL" property="shouCard" />
+    <result column="DAI_DATE" jdbcType="TIMESTAMP" property="daiDate" />
+    <result column="ONEMONEY" jdbcType="DECIMAL" property="onemoney" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -78,17 +78,17 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    boid, "uid", bdid, bigmoney, bigdai_date, yihuan, huan_card, shou_card, dai_date, 
-    onemoney, "status"
+    BOID, USERID, BDID, BIGMONEY, BIGDAI_DATE, YIHUAN, HUAN_CARD, SHOU_CARD, DAI_DATE, 
+    ONEMONEY, "STATUS"
   </sql>
-  <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.BigdaiOrderExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.BigdaiorderExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from bigdaiOrder
+    from BIGDAIORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -100,76 +100,76 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from bigdaiOrder
-    where boid = #{boid,jdbcType=DECIMAL}
+    from BIGDAIORDER
+    where BOID = #{boid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from bigdaiOrder
-    where boid = #{boid,jdbcType=DECIMAL}
+    delete from BIGDAIORDER
+    where BOID = #{boid,jdbcType=DECIMAL}
   </delete>
-  <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.BigdaiOrderExample">
+  <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.BigdaiorderExample">
     <!--@mbg.generated-->
-    delete from bigdaiOrder
+    delete from BIGDAIORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.zhaolian.demo.data.entity.BigdaiOrder">
+  <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Bigdaiorder">
     <!--@mbg.generated-->
-    insert into bigdaiOrder (boid, "uid", bdid, 
-      bigmoney, bigdai_date, yihuan, 
-      huan_card, shou_card, dai_date, 
-      onemoney, "status")
-    values (#{boid,jdbcType=DECIMAL}, #{uid,jdbcType=DECIMAL}, #{bdid,jdbcType=DECIMAL}, 
+    insert into BIGDAIORDER (BOID, USERID, BDID, 
+      BIGMONEY, BIGDAI_DATE, YIHUAN, 
+      HUAN_CARD, SHOU_CARD, DAI_DATE, 
+      ONEMONEY, "STATUS")
+    values (#{boid,jdbcType=DECIMAL}, #{userid,jdbcType=DECIMAL}, #{bdid,jdbcType=DECIMAL}, 
       #{bigmoney,jdbcType=DECIMAL}, #{bigdaiDate,jdbcType=DECIMAL}, #{yihuan,jdbcType=DECIMAL}, 
       #{huanCard,jdbcType=DECIMAL}, #{shouCard,jdbcType=DECIMAL}, #{daiDate,jdbcType=TIMESTAMP}, 
       #{onemoney,jdbcType=DECIMAL}, #{status,jdbcType=DECIMAL})
   </insert>
-  <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.BigdaiOrder">
+  <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Bigdaiorder">
     <!--@mbg.generated-->
-    insert into bigdaiOrder
+    insert into BIGDAIORDER
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="boid != null">
-        boid,
+        BOID,
       </if>
-      <if test="uid != null">
-        "uid",
+      <if test="userid != null">
+        USERID,
       </if>
       <if test="bdid != null">
-        bdid,
+        BDID,
       </if>
       <if test="bigmoney != null">
-        bigmoney,
+        BIGMONEY,
       </if>
       <if test="bigdaiDate != null">
-        bigdai_date,
+        BIGDAI_DATE,
       </if>
       <if test="yihuan != null">
-        yihuan,
+        YIHUAN,
       </if>
       <if test="huanCard != null">
-        huan_card,
+        HUAN_CARD,
       </if>
       <if test="shouCard != null">
-        shou_card,
+        SHOU_CARD,
       </if>
       <if test="daiDate != null">
-        dai_date,
+        DAI_DATE,
       </if>
       <if test="onemoney != null">
-        onemoney,
+        ONEMONEY,
       </if>
       <if test="status != null">
-        "status",
+        "STATUS",
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="boid != null">
         #{boid,jdbcType=DECIMAL},
       </if>
-      <if test="uid != null">
-        #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
       </if>
       <if test="bdid != null">
         #{bdid,jdbcType=DECIMAL},
@@ -200,49 +200,49 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.BigdaiOrderExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.BigdaiorderExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from bigdaiOrder
+    select count(*) from BIGDAIORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update bigdaiOrder
+    update BIGDAIORDER
     <set>
       <if test="record.boid != null">
-        boid = #{record.boid,jdbcType=DECIMAL},
+        BOID = #{record.boid,jdbcType=DECIMAL},
       </if>
-      <if test="record.uid != null">
-        "uid" = #{record.uid,jdbcType=DECIMAL},
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=DECIMAL},
       </if>
       <if test="record.bdid != null">
-        bdid = #{record.bdid,jdbcType=DECIMAL},
+        BDID = #{record.bdid,jdbcType=DECIMAL},
       </if>
       <if test="record.bigmoney != null">
-        bigmoney = #{record.bigmoney,jdbcType=DECIMAL},
+        BIGMONEY = #{record.bigmoney,jdbcType=DECIMAL},
       </if>
       <if test="record.bigdaiDate != null">
-        bigdai_date = #{record.bigdaiDate,jdbcType=DECIMAL},
+        BIGDAI_DATE = #{record.bigdaiDate,jdbcType=DECIMAL},
       </if>
       <if test="record.yihuan != null">
-        yihuan = #{record.yihuan,jdbcType=DECIMAL},
+        YIHUAN = #{record.yihuan,jdbcType=DECIMAL},
       </if>
       <if test="record.huanCard != null">
-        huan_card = #{record.huanCard,jdbcType=DECIMAL},
+        HUAN_CARD = #{record.huanCard,jdbcType=DECIMAL},
       </if>
       <if test="record.shouCard != null">
-        shou_card = #{record.shouCard,jdbcType=DECIMAL},
+        SHOU_CARD = #{record.shouCard,jdbcType=DECIMAL},
       </if>
       <if test="record.daiDate != null">
-        dai_date = #{record.daiDate,jdbcType=TIMESTAMP},
+        DAI_DATE = #{record.daiDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.onemoney != null">
-        onemoney = #{record.onemoney,jdbcType=DECIMAL},
+        ONEMONEY = #{record.onemoney,jdbcType=DECIMAL},
       </if>
       <if test="record.status != null">
-        "status" = #{record.status,jdbcType=DECIMAL},
+        "STATUS" = #{record.status,jdbcType=DECIMAL},
       </if>
     </set>
     <if test="_parameter != null">
@@ -251,72 +251,72 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update bigdaiOrder
-    set boid = #{record.boid,jdbcType=DECIMAL},
-      "uid" = #{record.uid,jdbcType=DECIMAL},
-      bdid = #{record.bdid,jdbcType=DECIMAL},
-      bigmoney = #{record.bigmoney,jdbcType=DECIMAL},
-      bigdai_date = #{record.bigdaiDate,jdbcType=DECIMAL},
-      yihuan = #{record.yihuan,jdbcType=DECIMAL},
-      huan_card = #{record.huanCard,jdbcType=DECIMAL},
-      shou_card = #{record.shouCard,jdbcType=DECIMAL},
-      dai_date = #{record.daiDate,jdbcType=TIMESTAMP},
-      onemoney = #{record.onemoney,jdbcType=DECIMAL},
-      "status" = #{record.status,jdbcType=DECIMAL}
+    update BIGDAIORDER
+    set BOID = #{record.boid,jdbcType=DECIMAL},
+      USERID = #{record.userid,jdbcType=DECIMAL},
+      BDID = #{record.bdid,jdbcType=DECIMAL},
+      BIGMONEY = #{record.bigmoney,jdbcType=DECIMAL},
+      BIGDAI_DATE = #{record.bigdaiDate,jdbcType=DECIMAL},
+      YIHUAN = #{record.yihuan,jdbcType=DECIMAL},
+      HUAN_CARD = #{record.huanCard,jdbcType=DECIMAL},
+      SHOU_CARD = #{record.shouCard,jdbcType=DECIMAL},
+      DAI_DATE = #{record.daiDate,jdbcType=TIMESTAMP},
+      ONEMONEY = #{record.onemoney,jdbcType=DECIMAL},
+      "STATUS" = #{record.status,jdbcType=DECIMAL}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.BigdaiOrder">
+  <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Bigdaiorder">
     <!--@mbg.generated-->
-    update bigdaiOrder
+    update BIGDAIORDER
     <set>
-      <if test="uid != null">
-        "uid" = #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=DECIMAL},
       </if>
       <if test="bdid != null">
-        bdid = #{bdid,jdbcType=DECIMAL},
+        BDID = #{bdid,jdbcType=DECIMAL},
       </if>
       <if test="bigmoney != null">
-        bigmoney = #{bigmoney,jdbcType=DECIMAL},
+        BIGMONEY = #{bigmoney,jdbcType=DECIMAL},
       </if>
       <if test="bigdaiDate != null">
-        bigdai_date = #{bigdaiDate,jdbcType=DECIMAL},
+        BIGDAI_DATE = #{bigdaiDate,jdbcType=DECIMAL},
       </if>
       <if test="yihuan != null">
-        yihuan = #{yihuan,jdbcType=DECIMAL},
+        YIHUAN = #{yihuan,jdbcType=DECIMAL},
       </if>
       <if test="huanCard != null">
-        huan_card = #{huanCard,jdbcType=DECIMAL},
+        HUAN_CARD = #{huanCard,jdbcType=DECIMAL},
       </if>
       <if test="shouCard != null">
-        shou_card = #{shouCard,jdbcType=DECIMAL},
+        SHOU_CARD = #{shouCard,jdbcType=DECIMAL},
       </if>
       <if test="daiDate != null">
-        dai_date = #{daiDate,jdbcType=TIMESTAMP},
+        DAI_DATE = #{daiDate,jdbcType=TIMESTAMP},
       </if>
       <if test="onemoney != null">
-        onemoney = #{onemoney,jdbcType=DECIMAL},
+        ONEMONEY = #{onemoney,jdbcType=DECIMAL},
       </if>
       <if test="status != null">
-        "status" = #{status,jdbcType=DECIMAL},
+        "STATUS" = #{status,jdbcType=DECIMAL},
       </if>
     </set>
-    where boid = #{boid,jdbcType=DECIMAL}
+    where BOID = #{boid,jdbcType=DECIMAL}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.BigdaiOrder">
+  <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Bigdaiorder">
     <!--@mbg.generated-->
-    update bigdaiOrder
-    set "uid" = #{uid,jdbcType=DECIMAL},
-      bdid = #{bdid,jdbcType=DECIMAL},
-      bigmoney = #{bigmoney,jdbcType=DECIMAL},
-      bigdai_date = #{bigdaiDate,jdbcType=DECIMAL},
-      yihuan = #{yihuan,jdbcType=DECIMAL},
-      huan_card = #{huanCard,jdbcType=DECIMAL},
-      shou_card = #{shouCard,jdbcType=DECIMAL},
-      dai_date = #{daiDate,jdbcType=TIMESTAMP},
-      onemoney = #{onemoney,jdbcType=DECIMAL},
-      "status" = #{status,jdbcType=DECIMAL}
-    where boid = #{boid,jdbcType=DECIMAL}
+    update BIGDAIORDER
+    set USERID = #{userid,jdbcType=DECIMAL},
+      BDID = #{bdid,jdbcType=DECIMAL},
+      BIGMONEY = #{bigmoney,jdbcType=DECIMAL},
+      BIGDAI_DATE = #{bigdaiDate,jdbcType=DECIMAL},
+      YIHUAN = #{yihuan,jdbcType=DECIMAL},
+      HUAN_CARD = #{huanCard,jdbcType=DECIMAL},
+      SHOU_CARD = #{shouCard,jdbcType=DECIMAL},
+      DAI_DATE = #{daiDate,jdbcType=TIMESTAMP},
+      ONEMONEY = #{onemoney,jdbcType=DECIMAL},
+      "STATUS" = #{status,jdbcType=DECIMAL}
+    where BOID = #{boid,jdbcType=DECIMAL}
   </update>
 </mapper>

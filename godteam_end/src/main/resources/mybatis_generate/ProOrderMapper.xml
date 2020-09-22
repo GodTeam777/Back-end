@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhaolian.demo.data.dao.ProOrderMapper">
-  <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.ProOrder">
+<mapper namespace="com.zhaolian.demo.data.dao.ProorderMapper">
+  <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Proorder">
     <!--@mbg.generated-->
-    <!--@Table proOrder-->
-    <id column="poid" jdbcType="DECIMAL" property="poid" />
-    <result column="mpid" jdbcType="DECIMAL" property="mpid" />
-    <result column="uid" jdbcType="DECIMAL" property="uid" />
-    <result column="money" jdbcType="DECIMAL" property="money" />
-    <result column="licai_date" jdbcType="TIMESTAMP" property="licaiDate" />
-    <result column="zhifutype" jdbcType="VARCHAR" property="zhifutype" />
-    <result column="shou_date" jdbcType="TIMESTAMP" property="shouDate" />
-    <result column="status" jdbcType="DECIMAL" property="status" />
+    <!--@Table PROORDER-->
+    <id column="POID" jdbcType="DECIMAL" property="poid" />
+    <result column="MPID" jdbcType="DECIMAL" property="mpid" />
+    <result column="USERID" jdbcType="DECIMAL" property="userid" />
+    <result column="MONEY" jdbcType="DECIMAL" property="money" />
+    <result column="LICAI_DATE" jdbcType="TIMESTAMP" property="licaiDate" />
+    <result column="ZHIFUTYPE" jdbcType="VARCHAR" property="zhifutype" />
+    <result column="SHOU_DATE" jdbcType="TIMESTAMP" property="shouDate" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -75,16 +75,16 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    poid, mpid, "uid", money, licai_date, zhifutype, shou_date, "status"
+    POID, MPID, USERID, MONEY, LICAI_DATE, ZHIFUTYPE, SHOU_DATE, "STATUS"
   </sql>
-  <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.ProOrderExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.ProorderExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from proOrder
+    from PROORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -96,57 +96,57 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from proOrder
-    where poid = #{poid,jdbcType=DECIMAL}
+    from PROORDER
+    where POID = #{poid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from proOrder
-    where poid = #{poid,jdbcType=DECIMAL}
+    delete from PROORDER
+    where POID = #{poid,jdbcType=DECIMAL}
   </delete>
-  <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.ProOrderExample">
+  <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.ProorderExample">
     <!--@mbg.generated-->
-    delete from proOrder
+    delete from PROORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.zhaolian.demo.data.entity.ProOrder">
+  <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Proorder">
     <!--@mbg.generated-->
-    insert into proOrder (poid, mpid, "uid", 
-      money, licai_date, zhifutype, 
-      shou_date, "status")
-    values (#{poid,jdbcType=DECIMAL}, #{mpid,jdbcType=DECIMAL}, #{uid,jdbcType=DECIMAL}, 
+    insert into PROORDER (POID, MPID, USERID, 
+      MONEY, LICAI_DATE, ZHIFUTYPE, 
+      SHOU_DATE, "STATUS")
+    values (#{poid,jdbcType=DECIMAL}, #{mpid,jdbcType=DECIMAL}, #{userid,jdbcType=DECIMAL}, 
       #{money,jdbcType=DECIMAL}, #{licaiDate,jdbcType=TIMESTAMP}, #{zhifutype,jdbcType=VARCHAR}, 
       #{shouDate,jdbcType=TIMESTAMP}, #{status,jdbcType=DECIMAL})
   </insert>
-  <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.ProOrder">
+  <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Proorder">
     <!--@mbg.generated-->
-    insert into proOrder
+    insert into PROORDER
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="poid != null">
-        poid,
+        POID,
       </if>
       <if test="mpid != null">
-        mpid,
+        MPID,
       </if>
-      <if test="uid != null">
-        "uid",
+      <if test="userid != null">
+        USERID,
       </if>
       <if test="money != null">
-        money,
+        MONEY,
       </if>
       <if test="licaiDate != null">
-        licai_date,
+        LICAI_DATE,
       </if>
       <if test="zhifutype != null">
-        zhifutype,
+        ZHIFUTYPE,
       </if>
       <if test="shouDate != null">
-        shou_date,
+        SHOU_DATE,
       </if>
       <if test="status != null">
-        "status",
+        "STATUS",
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -156,8 +156,8 @@
       <if test="mpid != null">
         #{mpid,jdbcType=DECIMAL},
       </if>
-      <if test="uid != null">
-        #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
       </if>
       <if test="money != null">
         #{money,jdbcType=DECIMAL},
@@ -176,40 +176,40 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.ProOrderExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.ProorderExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from proOrder
+    select count(*) from PROORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update proOrder
+    update PROORDER
     <set>
       <if test="record.poid != null">
-        poid = #{record.poid,jdbcType=DECIMAL},
+        POID = #{record.poid,jdbcType=DECIMAL},
       </if>
       <if test="record.mpid != null">
-        mpid = #{record.mpid,jdbcType=DECIMAL},
+        MPID = #{record.mpid,jdbcType=DECIMAL},
       </if>
-      <if test="record.uid != null">
-        "uid" = #{record.uid,jdbcType=DECIMAL},
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=DECIMAL},
       </if>
       <if test="record.money != null">
-        money = #{record.money,jdbcType=DECIMAL},
+        MONEY = #{record.money,jdbcType=DECIMAL},
       </if>
       <if test="record.licaiDate != null">
-        licai_date = #{record.licaiDate,jdbcType=TIMESTAMP},
+        LICAI_DATE = #{record.licaiDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.zhifutype != null">
-        zhifutype = #{record.zhifutype,jdbcType=VARCHAR},
+        ZHIFUTYPE = #{record.zhifutype,jdbcType=VARCHAR},
       </if>
       <if test="record.shouDate != null">
-        shou_date = #{record.shouDate,jdbcType=TIMESTAMP},
+        SHOU_DATE = #{record.shouDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.status != null">
-        "status" = #{record.status,jdbcType=DECIMAL},
+        "STATUS" = #{record.status,jdbcType=DECIMAL},
       </if>
     </set>
     <if test="_parameter != null">
@@ -218,57 +218,57 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update proOrder
-    set poid = #{record.poid,jdbcType=DECIMAL},
-      mpid = #{record.mpid,jdbcType=DECIMAL},
-      "uid" = #{record.uid,jdbcType=DECIMAL},
-      money = #{record.money,jdbcType=DECIMAL},
-      licai_date = #{record.licaiDate,jdbcType=TIMESTAMP},
-      zhifutype = #{record.zhifutype,jdbcType=VARCHAR},
-      shou_date = #{record.shouDate,jdbcType=TIMESTAMP},
-      "status" = #{record.status,jdbcType=DECIMAL}
+    update PROORDER
+    set POID = #{record.poid,jdbcType=DECIMAL},
+      MPID = #{record.mpid,jdbcType=DECIMAL},
+      USERID = #{record.userid,jdbcType=DECIMAL},
+      MONEY = #{record.money,jdbcType=DECIMAL},
+      LICAI_DATE = #{record.licaiDate,jdbcType=TIMESTAMP},
+      ZHIFUTYPE = #{record.zhifutype,jdbcType=VARCHAR},
+      SHOU_DATE = #{record.shouDate,jdbcType=TIMESTAMP},
+      "STATUS" = #{record.status,jdbcType=DECIMAL}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.ProOrder">
+  <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Proorder">
     <!--@mbg.generated-->
-    update proOrder
+    update PROORDER
     <set>
       <if test="mpid != null">
-        mpid = #{mpid,jdbcType=DECIMAL},
+        MPID = #{mpid,jdbcType=DECIMAL},
       </if>
-      <if test="uid != null">
-        "uid" = #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=DECIMAL},
       </if>
       <if test="money != null">
-        money = #{money,jdbcType=DECIMAL},
+        MONEY = #{money,jdbcType=DECIMAL},
       </if>
       <if test="licaiDate != null">
-        licai_date = #{licaiDate,jdbcType=TIMESTAMP},
+        LICAI_DATE = #{licaiDate,jdbcType=TIMESTAMP},
       </if>
       <if test="zhifutype != null">
-        zhifutype = #{zhifutype,jdbcType=VARCHAR},
+        ZHIFUTYPE = #{zhifutype,jdbcType=VARCHAR},
       </if>
       <if test="shouDate != null">
-        shou_date = #{shouDate,jdbcType=TIMESTAMP},
+        SHOU_DATE = #{shouDate,jdbcType=TIMESTAMP},
       </if>
       <if test="status != null">
-        "status" = #{status,jdbcType=DECIMAL},
+        "STATUS" = #{status,jdbcType=DECIMAL},
       </if>
     </set>
-    where poid = #{poid,jdbcType=DECIMAL}
+    where POID = #{poid,jdbcType=DECIMAL}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.ProOrder">
+  <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Proorder">
     <!--@mbg.generated-->
-    update proOrder
-    set mpid = #{mpid,jdbcType=DECIMAL},
-      "uid" = #{uid,jdbcType=DECIMAL},
-      money = #{money,jdbcType=DECIMAL},
-      licai_date = #{licaiDate,jdbcType=TIMESTAMP},
-      zhifutype = #{zhifutype,jdbcType=VARCHAR},
-      shou_date = #{shouDate,jdbcType=TIMESTAMP},
-      "status" = #{status,jdbcType=DECIMAL}
-    where poid = #{poid,jdbcType=DECIMAL}
+    update PROORDER
+    set MPID = #{mpid,jdbcType=DECIMAL},
+      USERID = #{userid,jdbcType=DECIMAL},
+      MONEY = #{money,jdbcType=DECIMAL},
+      LICAI_DATE = #{licaiDate,jdbcType=TIMESTAMP},
+      ZHIFUTYPE = #{zhifutype,jdbcType=VARCHAR},
+      SHOU_DATE = #{shouDate,jdbcType=TIMESTAMP},
+      "STATUS" = #{status,jdbcType=DECIMAL}
+    where POID = #{poid,jdbcType=DECIMAL}
   </update>
 </mapper>

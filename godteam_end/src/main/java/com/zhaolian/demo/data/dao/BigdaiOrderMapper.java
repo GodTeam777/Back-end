@@ -1,33 +1,33 @@
 package com.zhaolian.demo.data.dao;
 
-import com.zhaolian.demo.data.entity.BigdaiOrder;
-import com.zhaolian.demo.data.entity.BigdaiOrderExample;
+import com.zhaolian.demo.data.entity.Bigdaiorder;
+import com.zhaolian.demo.data.entity.BigdaiorderExample;
 import java.math.BigDecimal;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 @Mapper
-public interface BigdaiOrderMapper {
-    long countByExample(BigdaiOrderExample example);
+public interface BigdaiorderMapper {
+    long countByExample(BigdaiorderExample example);
 
-    int deleteByExample(BigdaiOrderExample example);
+    int deleteByExample(BigdaiorderExample example);
 
     int deleteByPrimaryKey(BigDecimal boid);
 
-    int insert(BigdaiOrder record);
+    int insert(Bigdaiorder record);
 
-    int insertSelective(BigdaiOrder record);
+    int insertSelective(Bigdaiorder record);
 
-    List<BigdaiOrder> selectByExample(BigdaiOrderExample example);
+    List<Bigdaiorder> selectByExample(BigdaiorderExample example);
 
-    BigdaiOrder selectByPrimaryKey(BigDecimal boid);
+    Bigdaiorder selectByPrimaryKey(BigDecimal boid);
 
-    int updateByExampleSelective(@Param("record") BigdaiOrder record, @Param("example") BigdaiOrderExample example);
+    int updateByExampleSelective(@Param("record") Bigdaiorder record, @Param("example") BigdaiorderExample example);
 
-    int updateByExample(@Param("record") BigdaiOrder record, @Param("example") BigdaiOrderExample example);
+    int updateByExample(@Param("record") Bigdaiorder record, @Param("example") BigdaiorderExample example);
 
-    int updateByPrimaryKeySelective(BigdaiOrder record);
+    int updateByPrimaryKeySelective(Bigdaiorder record);
 
-    int updateByPrimaryKey(BigdaiOrder record);
+    int updateByPrimaryKey(Bigdaiorder record);
 }

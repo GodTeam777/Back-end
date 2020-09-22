@@ -106,532 +106,532 @@ public class MoneyproExample {
         }
 
         public Criteria andMpidIsNull() {
-            addCriterion("mpid is null");
+            addCriterion("MPID is null");
             return (Criteria) this;
         }
 
         public Criteria andMpidIsNotNull() {
-            addCriterion("mpid is not null");
+            addCriterion("MPID is not null");
             return (Criteria) this;
         }
 
         public Criteria andMpidEqualTo(BigDecimal value) {
-            addCriterion("mpid =", value, "mpid");
+            addCriterion("MPID =", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidNotEqualTo(BigDecimal value) {
-            addCriterion("mpid <>", value, "mpid");
+            addCriterion("MPID <>", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidGreaterThan(BigDecimal value) {
-            addCriterion("mpid >", value, "mpid");
+            addCriterion("MPID >", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("mpid >=", value, "mpid");
+            addCriterion("MPID >=", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidLessThan(BigDecimal value) {
-            addCriterion("mpid <", value, "mpid");
+            addCriterion("MPID <", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("mpid <=", value, "mpid");
+            addCriterion("MPID <=", value, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidIn(List<BigDecimal> values) {
-            addCriterion("mpid in", values, "mpid");
+            addCriterion("MPID in", values, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidNotIn(List<BigDecimal> values) {
-            addCriterion("mpid not in", values, "mpid");
+            addCriterion("MPID not in", values, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("mpid between", value1, value2, "mpid");
+            addCriterion("MPID between", value1, value2, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpidNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("mpid not between", value1, value2, "mpid");
+            addCriterion("MPID not between", value1, value2, "mpid");
             return (Criteria) this;
         }
 
         public Criteria andMpnameIsNull() {
-            addCriterion("mpname is null");
+            addCriterion("MPNAME is null");
             return (Criteria) this;
         }
 
         public Criteria andMpnameIsNotNull() {
-            addCriterion("mpname is not null");
+            addCriterion("MPNAME is not null");
             return (Criteria) this;
         }
 
         public Criteria andMpnameEqualTo(String value) {
-            addCriterion("mpname =", value, "mpname");
+            addCriterion("MPNAME =", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameNotEqualTo(String value) {
-            addCriterion("mpname <>", value, "mpname");
+            addCriterion("MPNAME <>", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameGreaterThan(String value) {
-            addCriterion("mpname >", value, "mpname");
+            addCriterion("MPNAME >", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameGreaterThanOrEqualTo(String value) {
-            addCriterion("mpname >=", value, "mpname");
+            addCriterion("MPNAME >=", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameLessThan(String value) {
-            addCriterion("mpname <", value, "mpname");
+            addCriterion("MPNAME <", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameLessThanOrEqualTo(String value) {
-            addCriterion("mpname <=", value, "mpname");
+            addCriterion("MPNAME <=", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameLike(String value) {
-            addCriterion("mpname like", value, "mpname");
+            addCriterion("MPNAME like", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameNotLike(String value) {
-            addCriterion("mpname not like", value, "mpname");
+            addCriterion("MPNAME not like", value, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameIn(List<String> values) {
-            addCriterion("mpname in", values, "mpname");
+            addCriterion("MPNAME in", values, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameNotIn(List<String> values) {
-            addCriterion("mpname not in", values, "mpname");
+            addCriterion("MPNAME not in", values, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameBetween(String value1, String value2) {
-            addCriterion("mpname between", value1, value2, "mpname");
+            addCriterion("MPNAME between", value1, value2, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMpnameNotBetween(String value1, String value2) {
-            addCriterion("mpname not between", value1, value2, "mpname");
+            addCriterion("MPNAME not between", value1, value2, "mpname");
             return (Criteria) this;
         }
 
         public Criteria andMptypeIsNull() {
-            addCriterion("mptype is null");
+            addCriterion("MPTYPE is null");
             return (Criteria) this;
         }
 
         public Criteria andMptypeIsNotNull() {
-            addCriterion("mptype is not null");
+            addCriterion("MPTYPE is not null");
             return (Criteria) this;
         }
 
         public Criteria andMptypeEqualTo(String value) {
-            addCriterion("mptype =", value, "mptype");
+            addCriterion("MPTYPE =", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeNotEqualTo(String value) {
-            addCriterion("mptype <>", value, "mptype");
+            addCriterion("MPTYPE <>", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeGreaterThan(String value) {
-            addCriterion("mptype >", value, "mptype");
+            addCriterion("MPTYPE >", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeGreaterThanOrEqualTo(String value) {
-            addCriterion("mptype >=", value, "mptype");
+            addCriterion("MPTYPE >=", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeLessThan(String value) {
-            addCriterion("mptype <", value, "mptype");
+            addCriterion("MPTYPE <", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeLessThanOrEqualTo(String value) {
-            addCriterion("mptype <=", value, "mptype");
+            addCriterion("MPTYPE <=", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeLike(String value) {
-            addCriterion("mptype like", value, "mptype");
+            addCriterion("MPTYPE like", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeNotLike(String value) {
-            addCriterion("mptype not like", value, "mptype");
+            addCriterion("MPTYPE not like", value, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeIn(List<String> values) {
-            addCriterion("mptype in", values, "mptype");
+            addCriterion("MPTYPE in", values, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeNotIn(List<String> values) {
-            addCriterion("mptype not in", values, "mptype");
+            addCriterion("MPTYPE not in", values, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeBetween(String value1, String value2) {
-            addCriterion("mptype between", value1, value2, "mptype");
+            addCriterion("MPTYPE between", value1, value2, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andMptypeNotBetween(String value1, String value2) {
-            addCriterion("mptype not between", value1, value2, "mptype");
+            addCriterion("MPTYPE not between", value1, value2, "mptype");
             return (Criteria) this;
         }
 
         public Criteria andIncomeIsNull() {
-            addCriterion("income is null");
+            addCriterion("INCOME is null");
             return (Criteria) this;
         }
 
         public Criteria andIncomeIsNotNull() {
-            addCriterion("income is not null");
+            addCriterion("INCOME is not null");
             return (Criteria) this;
         }
 
         public Criteria andIncomeEqualTo(BigDecimal value) {
-            addCriterion("income =", value, "income");
+            addCriterion("INCOME =", value, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeNotEqualTo(BigDecimal value) {
-            addCriterion("income <>", value, "income");
+            addCriterion("INCOME <>", value, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeGreaterThan(BigDecimal value) {
-            addCriterion("income >", value, "income");
+            addCriterion("INCOME >", value, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("income >=", value, "income");
+            addCriterion("INCOME >=", value, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeLessThan(BigDecimal value) {
-            addCriterion("income <", value, "income");
+            addCriterion("INCOME <", value, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("income <=", value, "income");
+            addCriterion("INCOME <=", value, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeIn(List<BigDecimal> values) {
-            addCriterion("income in", values, "income");
+            addCriterion("INCOME in", values, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeNotIn(List<BigDecimal> values) {
-            addCriterion("income not in", values, "income");
+            addCriterion("INCOME not in", values, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("income between", value1, value2, "income");
+            addCriterion("INCOME between", value1, value2, "income");
             return (Criteria) this;
         }
 
         public Criteria andIncomeNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("income not between", value1, value2, "income");
+            addCriterion("INCOME not between", value1, value2, "income");
             return (Criteria) this;
         }
 
         public Criteria andMppathIsNull() {
-            addCriterion("mppath is null");
+            addCriterion("MPPATH is null");
             return (Criteria) this;
         }
 
         public Criteria andMppathIsNotNull() {
-            addCriterion("mppath is not null");
+            addCriterion("MPPATH is not null");
             return (Criteria) this;
         }
 
         public Criteria andMppathEqualTo(String value) {
-            addCriterion("mppath =", value, "mppath");
+            addCriterion("MPPATH =", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathNotEqualTo(String value) {
-            addCriterion("mppath <>", value, "mppath");
+            addCriterion("MPPATH <>", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathGreaterThan(String value) {
-            addCriterion("mppath >", value, "mppath");
+            addCriterion("MPPATH >", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathGreaterThanOrEqualTo(String value) {
-            addCriterion("mppath >=", value, "mppath");
+            addCriterion("MPPATH >=", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathLessThan(String value) {
-            addCriterion("mppath <", value, "mppath");
+            addCriterion("MPPATH <", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathLessThanOrEqualTo(String value) {
-            addCriterion("mppath <=", value, "mppath");
+            addCriterion("MPPATH <=", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathLike(String value) {
-            addCriterion("mppath like", value, "mppath");
+            addCriterion("MPPATH like", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathNotLike(String value) {
-            addCriterion("mppath not like", value, "mppath");
+            addCriterion("MPPATH not like", value, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathIn(List<String> values) {
-            addCriterion("mppath in", values, "mppath");
+            addCriterion("MPPATH in", values, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathNotIn(List<String> values) {
-            addCriterion("mppath not in", values, "mppath");
+            addCriterion("MPPATH not in", values, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathBetween(String value1, String value2) {
-            addCriterion("mppath between", value1, value2, "mppath");
+            addCriterion("MPPATH between", value1, value2, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMppathNotBetween(String value1, String value2) {
-            addCriterion("mppath not between", value1, value2, "mppath");
+            addCriterion("MPPATH not between", value1, value2, "mppath");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleIsNull() {
-            addCriterion("mp_title is null");
+            addCriterion("MP_TITLE is null");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleIsNotNull() {
-            addCriterion("mp_title is not null");
+            addCriterion("MP_TITLE is not null");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleEqualTo(String value) {
-            addCriterion("mp_title =", value, "mpTitle");
+            addCriterion("MP_TITLE =", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleNotEqualTo(String value) {
-            addCriterion("mp_title <>", value, "mpTitle");
+            addCriterion("MP_TITLE <>", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleGreaterThan(String value) {
-            addCriterion("mp_title >", value, "mpTitle");
+            addCriterion("MP_TITLE >", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleGreaterThanOrEqualTo(String value) {
-            addCriterion("mp_title >=", value, "mpTitle");
+            addCriterion("MP_TITLE >=", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleLessThan(String value) {
-            addCriterion("mp_title <", value, "mpTitle");
+            addCriterion("MP_TITLE <", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleLessThanOrEqualTo(String value) {
-            addCriterion("mp_title <=", value, "mpTitle");
+            addCriterion("MP_TITLE <=", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleLike(String value) {
-            addCriterion("mp_title like", value, "mpTitle");
+            addCriterion("MP_TITLE like", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleNotLike(String value) {
-            addCriterion("mp_title not like", value, "mpTitle");
+            addCriterion("MP_TITLE not like", value, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleIn(List<String> values) {
-            addCriterion("mp_title in", values, "mpTitle");
+            addCriterion("MP_TITLE in", values, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleNotIn(List<String> values) {
-            addCriterion("mp_title not in", values, "mpTitle");
+            addCriterion("MP_TITLE not in", values, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleBetween(String value1, String value2) {
-            addCriterion("mp_title between", value1, value2, "mpTitle");
+            addCriterion("MP_TITLE between", value1, value2, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpTitleNotBetween(String value1, String value2) {
-            addCriterion("mp_title not between", value1, value2, "mpTitle");
+            addCriterion("MP_TITLE not between", value1, value2, "mpTitle");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyIsNull() {
-            addCriterion("mp_body is null");
+            addCriterion("MP_BODY is null");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyIsNotNull() {
-            addCriterion("mp_body is not null");
+            addCriterion("MP_BODY is not null");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyEqualTo(String value) {
-            addCriterion("mp_body =", value, "mpBody");
+            addCriterion("MP_BODY =", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyNotEqualTo(String value) {
-            addCriterion("mp_body <>", value, "mpBody");
+            addCriterion("MP_BODY <>", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyGreaterThan(String value) {
-            addCriterion("mp_body >", value, "mpBody");
+            addCriterion("MP_BODY >", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyGreaterThanOrEqualTo(String value) {
-            addCriterion("mp_body >=", value, "mpBody");
+            addCriterion("MP_BODY >=", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyLessThan(String value) {
-            addCriterion("mp_body <", value, "mpBody");
+            addCriterion("MP_BODY <", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyLessThanOrEqualTo(String value) {
-            addCriterion("mp_body <=", value, "mpBody");
+            addCriterion("MP_BODY <=", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyLike(String value) {
-            addCriterion("mp_body like", value, "mpBody");
+            addCriterion("MP_BODY like", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyNotLike(String value) {
-            addCriterion("mp_body not like", value, "mpBody");
+            addCriterion("MP_BODY not like", value, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyIn(List<String> values) {
-            addCriterion("mp_body in", values, "mpBody");
+            addCriterion("MP_BODY in", values, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyNotIn(List<String> values) {
-            addCriterion("mp_body not in", values, "mpBody");
+            addCriterion("MP_BODY not in", values, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyBetween(String value1, String value2) {
-            addCriterion("mp_body between", value1, value2, "mpBody");
+            addCriterion("MP_BODY between", value1, value2, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andMpBodyNotBetween(String value1, String value2) {
-            addCriterion("mp_body not between", value1, value2, "mpBody");
+            addCriterion("MP_BODY not between", value1, value2, "mpBody");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiIsNull() {
-            addCriterion("zhouqi is null");
+            addCriterion("ZHOUQI is null");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiIsNotNull() {
-            addCriterion("zhouqi is not null");
+            addCriterion("ZHOUQI is not null");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiEqualTo(BigDecimal value) {
-            addCriterion("zhouqi =", value, "zhouqi");
+            addCriterion("ZHOUQI =", value, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiNotEqualTo(BigDecimal value) {
-            addCriterion("zhouqi <>", value, "zhouqi");
+            addCriterion("ZHOUQI <>", value, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiGreaterThan(BigDecimal value) {
-            addCriterion("zhouqi >", value, "zhouqi");
+            addCriterion("ZHOUQI >", value, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("zhouqi >=", value, "zhouqi");
+            addCriterion("ZHOUQI >=", value, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiLessThan(BigDecimal value) {
-            addCriterion("zhouqi <", value, "zhouqi");
+            addCriterion("ZHOUQI <", value, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("zhouqi <=", value, "zhouqi");
+            addCriterion("ZHOUQI <=", value, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiIn(List<BigDecimal> values) {
-            addCriterion("zhouqi in", values, "zhouqi");
+            addCriterion("ZHOUQI in", values, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiNotIn(List<BigDecimal> values) {
-            addCriterion("zhouqi not in", values, "zhouqi");
+            addCriterion("ZHOUQI not in", values, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("zhouqi between", value1, value2, "zhouqi");
+            addCriterion("ZHOUQI between", value1, value2, "zhouqi");
             return (Criteria) this;
         }
 
         public Criteria andZhouqiNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("zhouqi not between", value1, value2, "zhouqi");
+            addCriterion("ZHOUQI not between", value1, value2, "zhouqi");
             return (Criteria) this;
         }
     }

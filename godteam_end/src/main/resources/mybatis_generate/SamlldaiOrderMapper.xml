@@ -3,16 +3,16 @@
 <mapper namespace="com.zhaolian.demo.data.dao.SamlldaiOrderMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.SamlldaiOrder">
     <!--@mbg.generated-->
-    <!--@Table samlldai_order-->
-    <id column="sdoid" jdbcType="DECIMAL" property="sdoid" />
-    <result column="uid" jdbcType="DECIMAL" property="uid" />
-    <result column="daimoney" jdbcType="DECIMAL" property="daimoney" />
-    <result column="shou_card" jdbcType="VARCHAR" property="shouCard" />
-    <result column="huan_card" jdbcType="VARCHAR" property="huanCard" />
-    <result column="mou" jdbcType="DECIMAL" property="mou" />
-    <result column="dai_date" jdbcType="TIMESTAMP" property="daiDate" />
-    <result column="yihuan" jdbcType="DECIMAL" property="yihuan" />
-    <result column="onemoney" jdbcType="DECIMAL" property="onemoney" />
+    <!--@Table SAMLLDAI_ORDER-->
+    <id column="SDOID" jdbcType="DECIMAL" property="sdoid" />
+    <result column="USERID" jdbcType="DECIMAL" property="userid" />
+    <result column="DAIMONEY" jdbcType="DECIMAL" property="daimoney" />
+    <result column="SHOU_CARD" jdbcType="VARCHAR" property="shouCard" />
+    <result column="HUAN_CARD" jdbcType="VARCHAR" property="huanCard" />
+    <result column="MOU" jdbcType="DECIMAL" property="mou" />
+    <result column="DAI_DATE" jdbcType="TIMESTAMP" property="daiDate" />
+    <result column="YIHUAN" jdbcType="DECIMAL" property="yihuan" />
+    <result column="ONEMONEY" jdbcType="DECIMAL" property="onemoney" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -76,7 +76,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    sdoid, "uid", daimoney, shou_card, huan_card, mou, dai_date, yihuan, onemoney
+    SDOID, USERID, DAIMONEY, SHOU_CARD, HUAN_CARD, MOU, DAI_DATE, YIHUAN, ONEMONEY
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrderExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -85,7 +85,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from samlldai_order
+    from SAMLLDAI_ORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -97,70 +97,70 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from samlldai_order
-    where sdoid = #{sdoid,jdbcType=DECIMAL}
+    from SAMLLDAI_ORDER
+    where SDOID = #{sdoid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from samlldai_order
-    where sdoid = #{sdoid,jdbcType=DECIMAL}
+    delete from SAMLLDAI_ORDER
+    where SDOID = #{sdoid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrderExample">
     <!--@mbg.generated-->
-    delete from samlldai_order
+    delete from SAMLLDAI_ORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
     <!--@mbg.generated-->
-    insert into samlldai_order (sdoid, "uid", daimoney, 
-      shou_card, huan_card, mou, 
-      dai_date, yihuan, onemoney
+    insert into SAMLLDAI_ORDER (SDOID, USERID, DAIMONEY, 
+      SHOU_CARD, HUAN_CARD, MOU, 
+      DAI_DATE, YIHUAN, ONEMONEY
       )
-    values (#{sdoid,jdbcType=DECIMAL}, #{uid,jdbcType=DECIMAL}, #{daimoney,jdbcType=DECIMAL}, 
+    values (#{sdoid,jdbcType=DECIMAL}, #{userid,jdbcType=DECIMAL}, #{daimoney,jdbcType=DECIMAL}, 
       #{shouCard,jdbcType=VARCHAR}, #{huanCard,jdbcType=VARCHAR}, #{mou,jdbcType=DECIMAL}, 
       #{daiDate,jdbcType=TIMESTAMP}, #{yihuan,jdbcType=DECIMAL}, #{onemoney,jdbcType=DECIMAL}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
     <!--@mbg.generated-->
-    insert into samlldai_order
+    insert into SAMLLDAI_ORDER
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="sdoid != null">
-        sdoid,
+        SDOID,
       </if>
-      <if test="uid != null">
-        "uid",
+      <if test="userid != null">
+        USERID,
       </if>
       <if test="daimoney != null">
-        daimoney,
+        DAIMONEY,
       </if>
       <if test="shouCard != null">
-        shou_card,
+        SHOU_CARD,
       </if>
       <if test="huanCard != null">
-        huan_card,
+        HUAN_CARD,
       </if>
       <if test="mou != null">
-        mou,
+        MOU,
       </if>
       <if test="daiDate != null">
-        dai_date,
+        DAI_DATE,
       </if>
       <if test="yihuan != null">
-        yihuan,
+        YIHUAN,
       </if>
       <if test="onemoney != null">
-        onemoney,
+        ONEMONEY,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="sdoid != null">
         #{sdoid,jdbcType=DECIMAL},
       </if>
-      <if test="uid != null">
-        #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
       </if>
       <if test="daimoney != null">
         #{daimoney,jdbcType=DECIMAL},
@@ -187,41 +187,41 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrderExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from samlldai_order
+    select count(*) from SAMLLDAI_ORDER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update samlldai_order
+    update SAMLLDAI_ORDER
     <set>
       <if test="record.sdoid != null">
-        sdoid = #{record.sdoid,jdbcType=DECIMAL},
+        SDOID = #{record.sdoid,jdbcType=DECIMAL},
       </if>
-      <if test="record.uid != null">
-        "uid" = #{record.uid,jdbcType=DECIMAL},
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=DECIMAL},
       </if>
       <if test="record.daimoney != null">
-        daimoney = #{record.daimoney,jdbcType=DECIMAL},
+        DAIMONEY = #{record.daimoney,jdbcType=DECIMAL},
       </if>
       <if test="record.shouCard != null">
-        shou_card = #{record.shouCard,jdbcType=VARCHAR},
+        SHOU_CARD = #{record.shouCard,jdbcType=VARCHAR},
       </if>
       <if test="record.huanCard != null">
-        huan_card = #{record.huanCard,jdbcType=VARCHAR},
+        HUAN_CARD = #{record.huanCard,jdbcType=VARCHAR},
       </if>
       <if test="record.mou != null">
-        mou = #{record.mou,jdbcType=DECIMAL},
+        MOU = #{record.mou,jdbcType=DECIMAL},
       </if>
       <if test="record.daiDate != null">
-        dai_date = #{record.daiDate,jdbcType=TIMESTAMP},
+        DAI_DATE = #{record.daiDate,jdbcType=TIMESTAMP},
       </if>
       <if test="record.yihuan != null">
-        yihuan = #{record.yihuan,jdbcType=DECIMAL},
+        YIHUAN = #{record.yihuan,jdbcType=DECIMAL},
       </if>
       <if test="record.onemoney != null">
-        onemoney = #{record.onemoney,jdbcType=DECIMAL},
+        ONEMONEY = #{record.onemoney,jdbcType=DECIMAL},
       </if>
     </set>
     <if test="_parameter != null">
@@ -230,62 +230,62 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update samlldai_order
-    set sdoid = #{record.sdoid,jdbcType=DECIMAL},
-      "uid" = #{record.uid,jdbcType=DECIMAL},
-      daimoney = #{record.daimoney,jdbcType=DECIMAL},
-      shou_card = #{record.shouCard,jdbcType=VARCHAR},
-      huan_card = #{record.huanCard,jdbcType=VARCHAR},
-      mou = #{record.mou,jdbcType=DECIMAL},
-      dai_date = #{record.daiDate,jdbcType=TIMESTAMP},
-      yihuan = #{record.yihuan,jdbcType=DECIMAL},
-      onemoney = #{record.onemoney,jdbcType=DECIMAL}
+    update SAMLLDAI_ORDER
+    set SDOID = #{record.sdoid,jdbcType=DECIMAL},
+      USERID = #{record.userid,jdbcType=DECIMAL},
+      DAIMONEY = #{record.daimoney,jdbcType=DECIMAL},
+      SHOU_CARD = #{record.shouCard,jdbcType=VARCHAR},
+      HUAN_CARD = #{record.huanCard,jdbcType=VARCHAR},
+      MOU = #{record.mou,jdbcType=DECIMAL},
+      DAI_DATE = #{record.daiDate,jdbcType=TIMESTAMP},
+      YIHUAN = #{record.yihuan,jdbcType=DECIMAL},
+      ONEMONEY = #{record.onemoney,jdbcType=DECIMAL}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
     <!--@mbg.generated-->
-    update samlldai_order
+    update SAMLLDAI_ORDER
     <set>
-      <if test="uid != null">
-        "uid" = #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=DECIMAL},
       </if>
       <if test="daimoney != null">
-        daimoney = #{daimoney,jdbcType=DECIMAL},
+        DAIMONEY = #{daimoney,jdbcType=DECIMAL},
       </if>
       <if test="shouCard != null">
-        shou_card = #{shouCard,jdbcType=VARCHAR},
+        SHOU_CARD = #{shouCard,jdbcType=VARCHAR},
       </if>
       <if test="huanCard != null">
-        huan_card = #{huanCard,jdbcType=VARCHAR},
+        HUAN_CARD = #{huanCard,jdbcType=VARCHAR},
       </if>
       <if test="mou != null">
-        mou = #{mou,jdbcType=DECIMAL},
+        MOU = #{mou,jdbcType=DECIMAL},
       </if>
       <if test="daiDate != null">
-        dai_date = #{daiDate,jdbcType=TIMESTAMP},
+        DAI_DATE = #{daiDate,jdbcType=TIMESTAMP},
       </if>
       <if test="yihuan != null">
-        yihuan = #{yihuan,jdbcType=DECIMAL},
+        YIHUAN = #{yihuan,jdbcType=DECIMAL},
       </if>
       <if test="onemoney != null">
-        onemoney = #{onemoney,jdbcType=DECIMAL},
+        ONEMONEY = #{onemoney,jdbcType=DECIMAL},
       </if>
     </set>
-    where sdoid = #{sdoid,jdbcType=DECIMAL}
+    where SDOID = #{sdoid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
     <!--@mbg.generated-->
-    update samlldai_order
-    set "uid" = #{uid,jdbcType=DECIMAL},
-      daimoney = #{daimoney,jdbcType=DECIMAL},
-      shou_card = #{shouCard,jdbcType=VARCHAR},
-      huan_card = #{huanCard,jdbcType=VARCHAR},
-      mou = #{mou,jdbcType=DECIMAL},
-      dai_date = #{daiDate,jdbcType=TIMESTAMP},
-      yihuan = #{yihuan,jdbcType=DECIMAL},
-      onemoney = #{onemoney,jdbcType=DECIMAL}
-    where sdoid = #{sdoid,jdbcType=DECIMAL}
+    update SAMLLDAI_ORDER
+    set USERID = #{userid,jdbcType=DECIMAL},
+      DAIMONEY = #{daimoney,jdbcType=DECIMAL},
+      SHOU_CARD = #{shouCard,jdbcType=VARCHAR},
+      HUAN_CARD = #{huanCard,jdbcType=VARCHAR},
+      MOU = #{mou,jdbcType=DECIMAL},
+      DAI_DATE = #{daiDate,jdbcType=TIMESTAMP},
+      YIHUAN = #{yihuan,jdbcType=DECIMAL},
+      ONEMONEY = #{onemoney,jdbcType=DECIMAL}
+    where SDOID = #{sdoid,jdbcType=DECIMAL}
   </update>
 </mapper>

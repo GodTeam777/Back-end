@@ -3,12 +3,12 @@
 <mapper namespace="com.zhaolian.demo.data.dao.NewsCommentMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.NewsComment">
     <!--@mbg.generated-->
-    <!--@Table news_comment-->
-    <id column="ncid" jdbcType="DECIMAL" property="ncid" />
-    <result column="uid" jdbcType="DECIMAL" property="uid" />
-    <result column="nid" jdbcType="DECIMAL" property="nid" />
-    <result column="text" jdbcType="VARCHAR" property="text" />
-    <result column="comment_date" jdbcType="TIMESTAMP" property="commentDate" />
+    <!--@Table NEWS_COMMENT-->
+    <id column="NCID" jdbcType="DECIMAL" property="ncid" />
+    <result column="USERID" jdbcType="DECIMAL" property="userid" />
+    <result column="NID" jdbcType="DECIMAL" property="nid" />
+    <result column="TEXT" jdbcType="VARCHAR" property="text" />
+    <result column="COMMENT_DATE" jdbcType="TIMESTAMP" property="commentDate" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -72,7 +72,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    ncid, "uid", nid, "text", comment_date
+    NCID, USERID, NID, "TEXT", COMMENT_DATE
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.NewsCommentExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -81,7 +81,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from news_comment
+    from NEWS_COMMENT
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -93,54 +93,54 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from news_comment
-    where ncid = #{ncid,jdbcType=DECIMAL}
+    from NEWS_COMMENT
+    where NCID = #{ncid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from news_comment
-    where ncid = #{ncid,jdbcType=DECIMAL}
+    delete from NEWS_COMMENT
+    where NCID = #{ncid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.NewsCommentExample">
     <!--@mbg.generated-->
-    delete from news_comment
+    delete from NEWS_COMMENT
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.NewsComment">
     <!--@mbg.generated-->
-    insert into news_comment (ncid, "uid", nid, 
-      "text", comment_date)
-    values (#{ncid,jdbcType=DECIMAL}, #{uid,jdbcType=DECIMAL}, #{nid,jdbcType=DECIMAL}, 
+    insert into NEWS_COMMENT (NCID, USERID, NID, 
+      "TEXT", COMMENT_DATE)
+    values (#{ncid,jdbcType=DECIMAL}, #{userid,jdbcType=DECIMAL}, #{nid,jdbcType=DECIMAL}, 
       #{text,jdbcType=VARCHAR}, #{commentDate,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.NewsComment">
     <!--@mbg.generated-->
-    insert into news_comment
+    insert into NEWS_COMMENT
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="ncid != null">
-        ncid,
+        NCID,
       </if>
-      <if test="uid != null">
-        "uid",
+      <if test="userid != null">
+        USERID,
       </if>
       <if test="nid != null">
-        nid,
+        NID,
       </if>
       <if test="text != null">
-        "text",
+        "TEXT",
       </if>
       <if test="commentDate != null">
-        comment_date,
+        COMMENT_DATE,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="ncid != null">
         #{ncid,jdbcType=DECIMAL},
       </if>
-      <if test="uid != null">
-        #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
       </if>
       <if test="nid != null">
         #{nid,jdbcType=DECIMAL},
@@ -155,29 +155,29 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.NewsCommentExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from news_comment
+    select count(*) from NEWS_COMMENT
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update news_comment
+    update NEWS_COMMENT
     <set>
       <if test="record.ncid != null">
-        ncid = #{record.ncid,jdbcType=DECIMAL},
+        NCID = #{record.ncid,jdbcType=DECIMAL},
       </if>
-      <if test="record.uid != null">
-        "uid" = #{record.uid,jdbcType=DECIMAL},
+      <if test="record.userid != null">
+        USERID = #{record.userid,jdbcType=DECIMAL},
       </if>
       <if test="record.nid != null">
-        nid = #{record.nid,jdbcType=DECIMAL},
+        NID = #{record.nid,jdbcType=DECIMAL},
       </if>
       <if test="record.text != null">
-        "text" = #{record.text,jdbcType=VARCHAR},
+        "TEXT" = #{record.text,jdbcType=VARCHAR},
       </if>
       <if test="record.commentDate != null">
-        comment_date = #{record.commentDate,jdbcType=TIMESTAMP},
+        COMMENT_DATE = #{record.commentDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -186,42 +186,42 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update news_comment
-    set ncid = #{record.ncid,jdbcType=DECIMAL},
-      "uid" = #{record.uid,jdbcType=DECIMAL},
-      nid = #{record.nid,jdbcType=DECIMAL},
-      "text" = #{record.text,jdbcType=VARCHAR},
-      comment_date = #{record.commentDate,jdbcType=TIMESTAMP}
+    update NEWS_COMMENT
+    set NCID = #{record.ncid,jdbcType=DECIMAL},
+      USERID = #{record.userid,jdbcType=DECIMAL},
+      NID = #{record.nid,jdbcType=DECIMAL},
+      "TEXT" = #{record.text,jdbcType=VARCHAR},
+      COMMENT_DATE = #{record.commentDate,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.NewsComment">
     <!--@mbg.generated-->
-    update news_comment
+    update NEWS_COMMENT
     <set>
-      <if test="uid != null">
-        "uid" = #{uid,jdbcType=DECIMAL},
+      <if test="userid != null">
+        USERID = #{userid,jdbcType=DECIMAL},
       </if>
       <if test="nid != null">
-        nid = #{nid,jdbcType=DECIMAL},
+        NID = #{nid,jdbcType=DECIMAL},
       </if>
       <if test="text != null">
-        "text" = #{text,jdbcType=VARCHAR},
+        "TEXT" = #{text,jdbcType=VARCHAR},
       </if>
       <if test="commentDate != null">
-        comment_date = #{commentDate,jdbcType=TIMESTAMP},
+        COMMENT_DATE = #{commentDate,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where ncid = #{ncid,jdbcType=DECIMAL}
+    where NCID = #{ncid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.NewsComment">
     <!--@mbg.generated-->
-    update news_comment
-    set "uid" = #{uid,jdbcType=DECIMAL},
-      nid = #{nid,jdbcType=DECIMAL},
-      "text" = #{text,jdbcType=VARCHAR},
-      comment_date = #{commentDate,jdbcType=TIMESTAMP}
-    where ncid = #{ncid,jdbcType=DECIMAL}
+    update NEWS_COMMENT
+    set USERID = #{userid,jdbcType=DECIMAL},
+      NID = #{nid,jdbcType=DECIMAL},
+      "TEXT" = #{text,jdbcType=VARCHAR},
+      COMMENT_DATE = #{commentDate,jdbcType=TIMESTAMP}
+    where NCID = #{ncid,jdbcType=DECIMAL}
   </update>
 </mapper>

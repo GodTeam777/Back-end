@@ -3,13 +3,13 @@
 <mapper namespace="com.zhaolian.demo.data.dao.NewesMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Newes">
     <!--@mbg.generated-->
-    <!--@Table newes-->
-    <id column="nid" jdbcType="DECIMAL" property="nid" />
-    <result column="news_title" jdbcType="VARCHAR" property="newsTitle" />
-    <result column="news_body" jdbcType="VARCHAR" property="newsBody" />
-    <result column="small_img" jdbcType="VARCHAR" property="smallImg" />
-    <result column="big_img" jdbcType="VARCHAR" property="bigImg" />
-    <result column="news_date" jdbcType="TIMESTAMP" property="newsDate" />
+    <!--@Table NEWES-->
+    <id column="NID" jdbcType="DECIMAL" property="nid" />
+    <result column="NEWS_TITLE" jdbcType="VARCHAR" property="newsTitle" />
+    <result column="NEWS_BODY" jdbcType="VARCHAR" property="newsBody" />
+    <result column="SMALL_IMG" jdbcType="VARCHAR" property="smallImg" />
+    <result column="BIG_IMG" jdbcType="VARCHAR" property="bigImg" />
+    <result column="NEWS_DATE" jdbcType="TIMESTAMP" property="newsDate" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -73,7 +73,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    nid, news_title, news_body, small_img, big_img, news_date
+    NID, NEWS_TITLE, NEWS_BODY, SMALL_IMG, BIG_IMG, NEWS_DATE
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.NewesExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -82,7 +82,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from newes
+    from NEWES
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -94,25 +94,25 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from newes
-    where nid = #{nid,jdbcType=DECIMAL}
+    from NEWES
+    where NID = #{nid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from newes
-    where nid = #{nid,jdbcType=DECIMAL}
+    delete from NEWES
+    where NID = #{nid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.NewesExample">
     <!--@mbg.generated-->
-    delete from newes
+    delete from NEWES
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Newes">
     <!--@mbg.generated-->
-    insert into newes (nid, news_title, news_body, 
-      small_img, big_img, news_date
+    insert into NEWES (NID, NEWS_TITLE, NEWS_BODY, 
+      SMALL_IMG, BIG_IMG, NEWS_DATE
       )
     values (#{nid,jdbcType=DECIMAL}, #{newsTitle,jdbcType=VARCHAR}, #{newsBody,jdbcType=VARCHAR}, 
       #{smallImg,jdbcType=VARCHAR}, #{bigImg,jdbcType=VARCHAR}, #{newsDate,jdbcType=TIMESTAMP}
@@ -120,25 +120,25 @@
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Newes">
     <!--@mbg.generated-->
-    insert into newes
+    insert into NEWES
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="nid != null">
-        nid,
+        NID,
       </if>
       <if test="newsTitle != null">
-        news_title,
+        NEWS_TITLE,
       </if>
       <if test="newsBody != null">
-        news_body,
+        NEWS_BODY,
       </if>
       <if test="smallImg != null">
-        small_img,
+        SMALL_IMG,
       </if>
       <if test="bigImg != null">
-        big_img,
+        BIG_IMG,
       </if>
       <if test="newsDate != null">
-        news_date,
+        NEWS_DATE,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -164,32 +164,32 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.NewesExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from newes
+    select count(*) from NEWES
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update newes
+    update NEWES
     <set>
       <if test="record.nid != null">
-        nid = #{record.nid,jdbcType=DECIMAL},
+        NID = #{record.nid,jdbcType=DECIMAL},
       </if>
       <if test="record.newsTitle != null">
-        news_title = #{record.newsTitle,jdbcType=VARCHAR},
+        NEWS_TITLE = #{record.newsTitle,jdbcType=VARCHAR},
       </if>
       <if test="record.newsBody != null">
-        news_body = #{record.newsBody,jdbcType=VARCHAR},
+        NEWS_BODY = #{record.newsBody,jdbcType=VARCHAR},
       </if>
       <if test="record.smallImg != null">
-        small_img = #{record.smallImg,jdbcType=VARCHAR},
+        SMALL_IMG = #{record.smallImg,jdbcType=VARCHAR},
       </if>
       <if test="record.bigImg != null">
-        big_img = #{record.bigImg,jdbcType=VARCHAR},
+        BIG_IMG = #{record.bigImg,jdbcType=VARCHAR},
       </if>
       <if test="record.newsDate != null">
-        news_date = #{record.newsDate,jdbcType=TIMESTAMP},
+        NEWS_DATE = #{record.newsDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -198,47 +198,47 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update newes
-    set nid = #{record.nid,jdbcType=DECIMAL},
-      news_title = #{record.newsTitle,jdbcType=VARCHAR},
-      news_body = #{record.newsBody,jdbcType=VARCHAR},
-      small_img = #{record.smallImg,jdbcType=VARCHAR},
-      big_img = #{record.bigImg,jdbcType=VARCHAR},
-      news_date = #{record.newsDate,jdbcType=TIMESTAMP}
+    update NEWES
+    set NID = #{record.nid,jdbcType=DECIMAL},
+      NEWS_TITLE = #{record.newsTitle,jdbcType=VARCHAR},
+      NEWS_BODY = #{record.newsBody,jdbcType=VARCHAR},
+      SMALL_IMG = #{record.smallImg,jdbcType=VARCHAR},
+      BIG_IMG = #{record.bigImg,jdbcType=VARCHAR},
+      NEWS_DATE = #{record.newsDate,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Newes">
     <!--@mbg.generated-->
-    update newes
+    update NEWES
     <set>
       <if test="newsTitle != null">
-        news_title = #{newsTitle,jdbcType=VARCHAR},
+        NEWS_TITLE = #{newsTitle,jdbcType=VARCHAR},
       </if>
       <if test="newsBody != null">
-        news_body = #{newsBody,jdbcType=VARCHAR},
+        NEWS_BODY = #{newsBody,jdbcType=VARCHAR},
       </if>
       <if test="smallImg != null">
-        small_img = #{smallImg,jdbcType=VARCHAR},
+        SMALL_IMG = #{smallImg,jdbcType=VARCHAR},
       </if>
       <if test="bigImg != null">
-        big_img = #{bigImg,jdbcType=VARCHAR},
+        BIG_IMG = #{bigImg,jdbcType=VARCHAR},
       </if>
       <if test="newsDate != null">
-        news_date = #{newsDate,jdbcType=TIMESTAMP},
+        NEWS_DATE = #{newsDate,jdbcType=TIMESTAMP},
       </if>
     </set>
-    where nid = #{nid,jdbcType=DECIMAL}
+    where NID = #{nid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Newes">
     <!--@mbg.generated-->
-    update newes
-    set news_title = #{newsTitle,jdbcType=VARCHAR},
-      news_body = #{newsBody,jdbcType=VARCHAR},
-      small_img = #{smallImg,jdbcType=VARCHAR},
-      big_img = #{bigImg,jdbcType=VARCHAR},
-      news_date = #{newsDate,jdbcType=TIMESTAMP}
-    where nid = #{nid,jdbcType=DECIMAL}
+    update NEWES
+    set NEWS_TITLE = #{newsTitle,jdbcType=VARCHAR},
+      NEWS_BODY = #{newsBody,jdbcType=VARCHAR},
+      SMALL_IMG = #{smallImg,jdbcType=VARCHAR},
+      BIG_IMG = #{bigImg,jdbcType=VARCHAR},
+      NEWS_DATE = #{newsDate,jdbcType=TIMESTAMP}
+    where NID = #{nid,jdbcType=DECIMAL}
   </update>
 </mapper>

@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class User implements Serializable {
-    private BigDecimal uid;
+public class Users implements Serializable {
+    private BigDecimal usersid;
 
-    private BigDecimal eduid;
+    private BigDecimal edusersid;
 
     private BigDecimal cid;
 
@@ -27,22 +27,24 @@ public class User implements Serializable {
 
     private BigDecimal type;
 
+    private BigDecimal status;
+
     private static final long serialVersionUID = 1L;
 
-    public BigDecimal getUid() {
-        return uid;
+    public BigDecimal getUsersid() {
+        return usersid;
     }
 
-    public void setUid(BigDecimal uid) {
-        this.uid = uid;
+    public void setUsersid(BigDecimal usersid) {
+        this.usersid = usersid;
     }
 
-    public BigDecimal getEduid() {
-        return eduid;
+    public BigDecimal getEdusersid() {
+        return edusersid;
     }
 
-    public void setEduid(BigDecimal eduid) {
-        this.eduid = eduid;
+    public void setEdusersid(BigDecimal edusersid) {
+        this.edusersid = edusersid;
     }
 
     public BigDecimal getCid() {
@@ -117,14 +119,22 @@ public class User implements Serializable {
         this.type = type;
     }
 
+    public BigDecimal getStatus() {
+        return status;
+    }
+
+    public void setStatus(BigDecimal status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(getClass().getSimpleName());
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
-        sb.append(", uid=").append(uid);
-        sb.append(", eduid=").append(eduid);
+        sb.append(", usersid=").append(usersid);
+        sb.append(", edusersid=").append(edusersid);
         sb.append(", cid=").append(cid);
         sb.append(", hid=").append(hid);
         sb.append(", cardid=").append(cardid);
@@ -134,6 +144,7 @@ public class User implements Serializable {
         sb.append(", phone=").append(phone);
         sb.append(", smalldai=").append(smalldai);
         sb.append(", type=").append(type);
+        sb.append(", status=").append(status);
         sb.append("]");
         return sb.toString();
     }

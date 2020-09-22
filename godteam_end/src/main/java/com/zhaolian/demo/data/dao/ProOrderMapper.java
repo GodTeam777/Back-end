@@ -1,33 +1,33 @@
 package com.zhaolian.demo.data.dao;
 
-import com.zhaolian.demo.data.entity.ProOrder;
-import com.zhaolian.demo.data.entity.ProOrderExample;
+import com.zhaolian.demo.data.entity.Proorder;
+import com.zhaolian.demo.data.entity.ProorderExample;
 import java.math.BigDecimal;
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 @Mapper
-public interface ProOrderMapper {
-    long countByExample(ProOrderExample example);
+public interface ProorderMapper {
+    long countByExample(ProorderExample example);
 
-    int deleteByExample(ProOrderExample example);
+    int deleteByExample(ProorderExample example);
 
     int deleteByPrimaryKey(BigDecimal poid);
 
-    int insert(ProOrder record);
+    int insert(Proorder record);
 
-    int insertSelective(ProOrder record);
+    int insertSelective(Proorder record);
 
-    List<ProOrder> selectByExample(ProOrderExample example);
+    List<Proorder> selectByExample(ProorderExample example);
 
-    ProOrder selectByPrimaryKey(BigDecimal poid);
+    Proorder selectByPrimaryKey(BigDecimal poid);
 
-    int updateByExampleSelective(@Param("record") ProOrder record, @Param("example") ProOrderExample example);
+    int updateByExampleSelective(@Param("record") Proorder record, @Param("example") ProorderExample example);
 
-    int updateByExample(@Param("record") ProOrder record, @Param("example") ProOrderExample example);
+    int updateByExample(@Param("record") Proorder record, @Param("example") ProorderExample example);
 
-    int updateByPrimaryKeySelective(ProOrder record);
+    int updateByPrimaryKeySelective(Proorder record);
 
-    int updateByPrimaryKey(ProOrder record);
+    int updateByPrimaryKey(Proorder record);
 }

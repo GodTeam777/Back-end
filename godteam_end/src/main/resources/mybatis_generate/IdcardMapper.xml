@@ -3,11 +3,11 @@
 <mapper namespace="com.zhaolian.demo.data.dao.IdcardMapper">
   <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
-    <!--@Table idcard-->
-    <id column="cardid" jdbcType="DECIMAL" property="cardid" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="idcard" jdbcType="VARCHAR" property="idcard" />
-    <result column="front" jdbcType="VARCHAR" property="front" />
+    <!--@Table IDCARD-->
+    <id column="CARDID" jdbcType="DECIMAL" property="cardid" />
+    <result column="NAME" jdbcType="VARCHAR" property="name" />
+    <result column="IDCARD" jdbcType="VARCHAR" property="idcard" />
+    <result column="FRONT" jdbcType="VARCHAR" property="front" />
     <result column="反面图" jdbcType="VARCHAR" property="反面图" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -72,7 +72,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    cardid, "name", idcard, front, 反面图
+    CARDID, "NAME", IDCARD, FRONT, 反面图
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.IdcardExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -81,7 +81,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from idcard
+    from IDCARD
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -93,43 +93,43 @@
     <!--@mbg.generated-->
     select 
     <include refid="Base_Column_List" />
-    from idcard
-    where cardid = #{cardid,jdbcType=DECIMAL}
+    from IDCARD
+    where CARDID = #{cardid,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
     <!--@mbg.generated-->
-    delete from idcard
-    where cardid = #{cardid,jdbcType=DECIMAL}
+    delete from IDCARD
+    where CARDID = #{cardid,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.IdcardExample">
     <!--@mbg.generated-->
-    delete from idcard
+    delete from IDCARD
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
-    insert into idcard (cardid, "name", idcard, 
-      front, 反面图)
+    insert into IDCARD (CARDID, "NAME", IDCARD, 
+      FRONT, 反面图)
     values (#{cardid,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, 
       #{front,jdbcType=VARCHAR}, #{反面图,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
-    insert into idcard
+    insert into IDCARD
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="cardid != null">
-        cardid,
+        CARDID,
       </if>
       <if test="name != null">
-        "name",
+        "NAME",
       </if>
       <if test="idcard != null">
-        idcard,
+        IDCARD,
       </if>
       <if test="front != null">
-        front,
+        FRONT,
       </if>
       <if test="反面图 != null">
         反面图,
@@ -155,26 +155,26 @@
   </insert>
   <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.IdcardExample" resultType="java.lang.Long">
     <!--@mbg.generated-->
-    select count(*) from idcard
+    select count(*) from IDCARD
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
     <!--@mbg.generated-->
-    update idcard
+    update IDCARD
     <set>
       <if test="record.cardid != null">
-        cardid = #{record.cardid,jdbcType=DECIMAL},
+        CARDID = #{record.cardid,jdbcType=DECIMAL},
       </if>
       <if test="record.name != null">
-        "name" = #{record.name,jdbcType=VARCHAR},
+        "NAME" = #{record.name,jdbcType=VARCHAR},
       </if>
       <if test="record.idcard != null">
-        idcard = #{record.idcard,jdbcType=VARCHAR},
+        IDCARD = #{record.idcard,jdbcType=VARCHAR},
       </if>
       <if test="record.front != null">
-        front = #{record.front,jdbcType=VARCHAR},
+        FRONT = #{record.front,jdbcType=VARCHAR},
       </if>
       <if test="record.反面图 != null">
         反面图 = #{record.反面图,jdbcType=VARCHAR},
@@ -186,11 +186,11 @@
   </update>
   <update id="updateByExample" parameterType="map">
     <!--@mbg.generated-->
-    update idcard
-    set cardid = #{record.cardid,jdbcType=DECIMAL},
-      "name" = #{record.name,jdbcType=VARCHAR},
-      idcard = #{record.idcard,jdbcType=VARCHAR},
-      front = #{record.front,jdbcType=VARCHAR},
+    update IDCARD
+    set CARDID = #{record.cardid,jdbcType=DECIMAL},
+      "NAME" = #{record.name,jdbcType=VARCHAR},
+      IDCARD = #{record.idcard,jdbcType=VARCHAR},
+      FRONT = #{record.front,jdbcType=VARCHAR},
       反面图 = #{record.反面图,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -198,30 +198,30 @@
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
-    update idcard
+    update IDCARD
     <set>
       <if test="name != null">
-        "name" = #{name,jdbcType=VARCHAR},
+        "NAME" = #{name,jdbcType=VARCHAR},
       </if>
       <if test="idcard != null">
-        idcard = #{idcard,jdbcType=VARCHAR},
+        IDCARD = #{idcard,jdbcType=VARCHAR},
       </if>
       <if test="front != null">
-        front = #{front,jdbcType=VARCHAR},
+        FRONT = #{front,jdbcType=VARCHAR},
       </if>
       <if test="反面图 != null">
         反面图 = #{反面图,jdbcType=VARCHAR},
       </if>
     </set>
-    where cardid = #{cardid,jdbcType=DECIMAL}
+    where CARDID = #{cardid,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
-    update idcard
-    set "name" = #{name,jdbcType=VARCHAR},
-      idcard = #{idcard,jdbcType=VARCHAR},
-      front = #{front,jdbcType=VARCHAR},
+    update IDCARD
+    set "NAME" = #{name,jdbcType=VARCHAR},
+      IDCARD = #{idcard,jdbcType=VARCHAR},
+      FRONT = #{front,jdbcType=VARCHAR},
       反面图 = #{反面图,jdbcType=VARCHAR}
-    where cardid = #{cardid,jdbcType=DECIMAL}
+    where CARDID = #{cardid,jdbcType=DECIMAL}
   </update>
 </mapper>

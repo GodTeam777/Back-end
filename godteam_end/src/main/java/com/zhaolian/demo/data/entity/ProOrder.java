@@ -4,12 +4,12 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class ProOrder implements Serializable {
+public class Proorder implements Serializable {
     private BigDecimal poid;
 
     private BigDecimal mpid;
 
-    private BigDecimal uid;
+    private BigDecimal userid;
 
     private BigDecimal money;
 
@@ -39,12 +39,12 @@ public class ProOrder implements Serializable {
         this.mpid = mpid;
     }
 
-    public BigDecimal getUid() {
-        return uid;
+    public BigDecimal getUserid() {
+        return userid;
     }
 
-    public void setUid(BigDecimal uid) {
-        this.uid = uid;
+    public void setUserid(BigDecimal userid) {
+        this.userid = userid;
     }
 
     public BigDecimal getMoney() {
@@ -95,7 +95,7 @@ public class ProOrder implements Serializable {
         sb.append("Hash = ").append(hashCode());
         sb.append(", poid=").append(poid);
         sb.append(", mpid=").append(mpid);
-        sb.append(", uid=").append(uid);
+        sb.append(", userid=").append(userid);
         sb.append(", money=").append(money);
         sb.append(", licaiDate=").append(licaiDate);
         sb.append(", zhifutype=").append(zhifutype);

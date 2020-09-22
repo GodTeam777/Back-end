@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 public class Bank implements Serializable {
     private BigDecimal bid;
 
-    private BigDecimal uid;
+    private BigDecimal userid;
 
     private BigDecimal bankcard;
 
@@ -20,12 +20,12 @@ public class Bank implements Serializable {
         this.bid = bid;
     }
 
-    public BigDecimal getUid() {
-        return uid;
+    public BigDecimal getUserid() {
+        return userid;
     }
 
-    public void setUid(BigDecimal uid) {
-        this.uid = uid;
+    public void setUserid(BigDecimal userid) {
+        this.userid = userid;
     }
 
     public BigDecimal getBankcard() {
@@ -43,7 +43,7 @@ public class Bank implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", bid=").append(bid);
-        sb.append(", uid=").append(uid);
+        sb.append(", userid=").append(userid);
         sb.append(", bankcard=").append(bankcard);
         sb.append("]");
         return sb.toString();

@@ -106,402 +106,402 @@ public class CarExample {
         }
 
         public Criteria andCidIsNull() {
-            addCriterion("cid is null");
+            addCriterion("CID is null");
             return (Criteria) this;
         }
 
         public Criteria andCidIsNotNull() {
-            addCriterion("cid is not null");
+            addCriterion("CID is not null");
             return (Criteria) this;
         }
 
         public Criteria andCidEqualTo(BigDecimal value) {
-            addCriterion("cid =", value, "cid");
+            addCriterion("CID =", value, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidNotEqualTo(BigDecimal value) {
-            addCriterion("cid <>", value, "cid");
+            addCriterion("CID <>", value, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidGreaterThan(BigDecimal value) {
-            addCriterion("cid >", value, "cid");
+            addCriterion("CID >", value, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("cid >=", value, "cid");
+            addCriterion("CID >=", value, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidLessThan(BigDecimal value) {
-            addCriterion("cid <", value, "cid");
+            addCriterion("CID <", value, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("cid <=", value, "cid");
+            addCriterion("CID <=", value, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidIn(List<BigDecimal> values) {
-            addCriterion("cid in", values, "cid");
+            addCriterion("CID in", values, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidNotIn(List<BigDecimal> values) {
-            addCriterion("cid not in", values, "cid");
+            addCriterion("CID not in", values, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("cid between", value1, value2, "cid");
+            addCriterion("CID between", value1, value2, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCidNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("cid not between", value1, value2, "cid");
+            addCriterion("CID not between", value1, value2, "cid");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandIsNull() {
-            addCriterion("carbrand is null");
+            addCriterion("CARBRAND is null");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandIsNotNull() {
-            addCriterion("carbrand is not null");
+            addCriterion("CARBRAND is not null");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandEqualTo(String value) {
-            addCriterion("carbrand =", value, "carbrand");
+            addCriterion("CARBRAND =", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandNotEqualTo(String value) {
-            addCriterion("carbrand <>", value, "carbrand");
+            addCriterion("CARBRAND <>", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandGreaterThan(String value) {
-            addCriterion("carbrand >", value, "carbrand");
+            addCriterion("CARBRAND >", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandGreaterThanOrEqualTo(String value) {
-            addCriterion("carbrand >=", value, "carbrand");
+            addCriterion("CARBRAND >=", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandLessThan(String value) {
-            addCriterion("carbrand <", value, "carbrand");
+            addCriterion("CARBRAND <", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandLessThanOrEqualTo(String value) {
-            addCriterion("carbrand <=", value, "carbrand");
+            addCriterion("CARBRAND <=", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandLike(String value) {
-            addCriterion("carbrand like", value, "carbrand");
+            addCriterion("CARBRAND like", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandNotLike(String value) {
-            addCriterion("carbrand not like", value, "carbrand");
+            addCriterion("CARBRAND not like", value, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandIn(List<String> values) {
-            addCriterion("carbrand in", values, "carbrand");
+            addCriterion("CARBRAND in", values, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandNotIn(List<String> values) {
-            addCriterion("carbrand not in", values, "carbrand");
+            addCriterion("CARBRAND not in", values, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandBetween(String value1, String value2) {
-            addCriterion("carbrand between", value1, value2, "carbrand");
+            addCriterion("CARBRAND between", value1, value2, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCarbrandNotBetween(String value1, String value2) {
-            addCriterion("carbrand not between", value1, value2, "carbrand");
+            addCriterion("CARBRAND not between", value1, value2, "carbrand");
             return (Criteria) this;
         }
 
         public Criteria andCaridIsNull() {
-            addCriterion("carid is null");
+            addCriterion("CARID is null");
             return (Criteria) this;
         }
 
         public Criteria andCaridIsNotNull() {
-            addCriterion("carid is not null");
+            addCriterion("CARID is not null");
             return (Criteria) this;
         }
 
         public Criteria andCaridEqualTo(String value) {
-            addCriterion("carid =", value, "carid");
+            addCriterion("CARID =", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridNotEqualTo(String value) {
-            addCriterion("carid <>", value, "carid");
+            addCriterion("CARID <>", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridGreaterThan(String value) {
-            addCriterion("carid >", value, "carid");
+            addCriterion("CARID >", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridGreaterThanOrEqualTo(String value) {
-            addCriterion("carid >=", value, "carid");
+            addCriterion("CARID >=", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridLessThan(String value) {
-            addCriterion("carid <", value, "carid");
+            addCriterion("CARID <", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridLessThanOrEqualTo(String value) {
-            addCriterion("carid <=", value, "carid");
+            addCriterion("CARID <=", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridLike(String value) {
-            addCriterion("carid like", value, "carid");
+            addCriterion("CARID like", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridNotLike(String value) {
-            addCriterion("carid not like", value, "carid");
+            addCriterion("CARID not like", value, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridIn(List<String> values) {
-            addCriterion("carid in", values, "carid");
+            addCriterion("CARID in", values, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridNotIn(List<String> values) {
-            addCriterion("carid not in", values, "carid");
+            addCriterion("CARID not in", values, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridBetween(String value1, String value2) {
-            addCriterion("carid between", value1, value2, "carid");
+            addCriterion("CARID between", value1, value2, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaridNotBetween(String value1, String value2) {
-            addCriterion("carid not between", value1, value2, "carid");
+            addCriterion("CARID not between", value1, value2, "carid");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressIsNull() {
-            addCriterion("caraddress is null");
+            addCriterion("CARADDRESS is null");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressIsNotNull() {
-            addCriterion("caraddress is not null");
+            addCriterion("CARADDRESS is not null");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressEqualTo(String value) {
-            addCriterion("caraddress =", value, "caraddress");
+            addCriterion("CARADDRESS =", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressNotEqualTo(String value) {
-            addCriterion("caraddress <>", value, "caraddress");
+            addCriterion("CARADDRESS <>", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressGreaterThan(String value) {
-            addCriterion("caraddress >", value, "caraddress");
+            addCriterion("CARADDRESS >", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressGreaterThanOrEqualTo(String value) {
-            addCriterion("caraddress >=", value, "caraddress");
+            addCriterion("CARADDRESS >=", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressLessThan(String value) {
-            addCriterion("caraddress <", value, "caraddress");
+            addCriterion("CARADDRESS <", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressLessThanOrEqualTo(String value) {
-            addCriterion("caraddress <=", value, "caraddress");
+            addCriterion("CARADDRESS <=", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressLike(String value) {
-            addCriterion("caraddress like", value, "caraddress");
+            addCriterion("CARADDRESS like", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressNotLike(String value) {
-            addCriterion("caraddress not like", value, "caraddress");
+            addCriterion("CARADDRESS not like", value, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressIn(List<String> values) {
-            addCriterion("caraddress in", values, "caraddress");
+            addCriterion("CARADDRESS in", values, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressNotIn(List<String> values) {
-            addCriterion("caraddress not in", values, "caraddress");
+            addCriterion("CARADDRESS not in", values, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressBetween(String value1, String value2) {
-            addCriterion("caraddress between", value1, value2, "caraddress");
+            addCriterion("CARADDRESS between", value1, value2, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCaraddressNotBetween(String value1, String value2) {
-            addCriterion("caraddress not between", value1, value2, "caraddress");
+            addCriterion("CARADDRESS not between", value1, value2, "caraddress");
             return (Criteria) this;
         }
 
         public Criteria andCpathIsNull() {
-            addCriterion("cpath is null");
+            addCriterion("CPATH is null");
             return (Criteria) this;
         }
 
         public Criteria andCpathIsNotNull() {
-            addCriterion("cpath is not null");
+            addCriterion("CPATH is not null");
             return (Criteria) this;
         }
 
         public Criteria andCpathEqualTo(String value) {
-            addCriterion("cpath =", value, "cpath");
+            addCriterion("CPATH =", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathNotEqualTo(String value) {
-            addCriterion("cpath <>", value, "cpath");
+            addCriterion("CPATH <>", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathGreaterThan(String value) {
-            addCriterion("cpath >", value, "cpath");
+            addCriterion("CPATH >", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathGreaterThanOrEqualTo(String value) {
-            addCriterion("cpath >=", value, "cpath");
+            addCriterion("CPATH >=", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathLessThan(String value) {
-            addCriterion("cpath <", value, "cpath");
+            addCriterion("CPATH <", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathLessThanOrEqualTo(String value) {
-            addCriterion("cpath <=", value, "cpath");
+            addCriterion("CPATH <=", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathLike(String value) {
-            addCriterion("cpath like", value, "cpath");
+            addCriterion("CPATH like", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathNotLike(String value) {
-            addCriterion("cpath not like", value, "cpath");
+            addCriterion("CPATH not like", value, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathIn(List<String> values) {
-            addCriterion("cpath in", values, "cpath");
+            addCriterion("CPATH in", values, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathNotIn(List<String> values) {
-            addCriterion("cpath not in", values, "cpath");
+            addCriterion("CPATH not in", values, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathBetween(String value1, String value2) {
-            addCriterion("cpath between", value1, value2, "cpath");
+            addCriterion("CPATH between", value1, value2, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andCpathNotBetween(String value1, String value2) {
-            addCriterion("cpath not between", value1, value2, "cpath");
+            addCriterion("CPATH not between", value1, value2, "cpath");
             return (Criteria) this;
         }
 
         public Criteria andStatusIsNull() {
-            addCriterion("\"status\" is null");
+            addCriterion("\"STATUS\" is null");
             return (Criteria) this;
         }
 
         public Criteria andStatusIsNotNull() {
-            addCriterion("\"status\" is not null");
+            addCriterion("\"STATUS\" is not null");
             return (Criteria) this;
         }
 
         public Criteria andStatusEqualTo(BigDecimal value) {
-            addCriterion("\"status\" =", value, "status");
+            addCriterion("\"STATUS\" =", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotEqualTo(BigDecimal value) {
-            addCriterion("\"status\" <>", value, "status");
+            addCriterion("\"STATUS\" <>", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusGreaterThan(BigDecimal value) {
-            addCriterion("\"status\" >", value, "status");
+            addCriterion("\"STATUS\" >", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"status\" >=", value, "status");
+            addCriterion("\"STATUS\" >=", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusLessThan(BigDecimal value) {
-            addCriterion("\"status\" <", value, "status");
+            addCriterion("\"STATUS\" <", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("\"status\" <=", value, "status");
+            addCriterion("\"STATUS\" <=", value, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusIn(List<BigDecimal> values) {
-            addCriterion("\"status\" in", values, "status");
+            addCriterion("\"STATUS\" in", values, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotIn(List<BigDecimal> values) {
-            addCriterion("\"status\" not in", values, "status");
+            addCriterion("\"STATUS\" not in", values, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"status\" between", value1, value2, "status");
+            addCriterion("\"STATUS\" between", value1, value2, "status");
             return (Criteria) this;
         }
 
         public Criteria andStatusNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("\"status\" not between", value1, value2, "status");
+            addCriterion("\"STATUS\" not between", value1, value2, "status");
             return (Criteria) this;
         }
     }
