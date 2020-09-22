@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhaolian.demo.data.dao.SamlldaiOrderMapper">
+  <resultMap id="BaseResultMap" type="com.zhaolian.demo.data.entity.SamlldaiOrder">
+    <!--@mbg.generated-->
+    <!--@Table samlldai_order-->
+    <id column="sdoid" jdbcType="DECIMAL" property="sdoid" />
+    <result column="uid" jdbcType="DECIMAL" property="uid" />
+    <result column="daimoney" jdbcType="DECIMAL" property="daimoney" />
+    <result column="shou_card" jdbcType="VARCHAR" property="shouCard" />
+    <result column="huan_card" jdbcType="VARCHAR" property="huanCard" />
+    <result column="mou" jdbcType="DECIMAL" property="mou" />
+    <result column="dai_date" jdbcType="TIMESTAMP" property="daiDate" />
+    <result column="yihuan" jdbcType="DECIMAL" property="yihuan" />
+    <result column="onemoney" jdbcType="DECIMAL" property="onemoney" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <!--@mbg.generated-->
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    sdoid, "uid", daimoney, shou_card, huan_card, mou, dai_date, yihuan, onemoney
+  </sql>
+  <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrderExample" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from samlldai_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.math.BigDecimal" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from samlldai_order
+    where sdoid = #{sdoid,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal">
+    <!--@mbg.generated-->
+    delete from samlldai_order
+    where sdoid = #{sdoid,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrderExample">
+    <!--@mbg.generated-->
+    delete from samlldai_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
+    <!--@mbg.generated-->
+    insert into samlldai_order (sdoid, "uid", daimoney, 
+      shou_card, huan_card, mou, 
+      dai_date, yihuan, onemoney
+      )
+    values (#{sdoid,jdbcType=DECIMAL}, #{uid,jdbcType=DECIMAL}, #{daimoney,jdbcType=DECIMAL}, 
+      #{shouCard,jdbcType=VARCHAR}, #{huanCard,jdbcType=VARCHAR}, #{mou,jdbcType=DECIMAL}, 
+      #{daiDate,jdbcType=TIMESTAMP}, #{yihuan,jdbcType=DECIMAL}, #{onemoney,jdbcType=DECIMAL}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
+    <!--@mbg.generated-->
+    insert into samlldai_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sdoid != null">
+        sdoid,
+      </if>
+      <if test="uid != null">
+        "uid",
+      </if>
+      <if test="daimoney != null">
+        daimoney,
+      </if>
+      <if test="shouCard != null">
+        shou_card,
+      </if>
+      <if test="huanCard != null">
+        huan_card,
+      </if>
+      <if test="mou != null">
+        mou,
+      </if>
+      <if test="daiDate != null">
+        dai_date,
+      </if>
+      <if test="yihuan != null">
+        yihuan,
+      </if>
+      <if test="onemoney != null">
+        onemoney,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sdoid != null">
+        #{sdoid,jdbcType=DECIMAL},
+      </if>
+      <if test="uid != null">
+        #{uid,jdbcType=DECIMAL},
+      </if>
+      <if test="daimoney != null">
+        #{daimoney,jdbcType=DECIMAL},
+      </if>
+      <if test="shouCard != null">
+        #{shouCard,jdbcType=VARCHAR},
+      </if>
+      <if test="huanCard != null">
+        #{huanCard,jdbcType=VARCHAR},
+      </if>
+      <if test="mou != null">
+        #{mou,jdbcType=DECIMAL},
+      </if>
+      <if test="daiDate != null">
+        #{daiDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="yihuan != null">
+        #{yihuan,jdbcType=DECIMAL},
+      </if>
+      <if test="onemoney != null">
+        #{onemoney,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrderExample" resultType="java.lang.Long">
+    <!--@mbg.generated-->
+    select count(*) from samlldai_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    <!--@mbg.generated-->
+    update samlldai_order
+    <set>
+      <if test="record.sdoid != null">
+        sdoid = #{record.sdoid,jdbcType=DECIMAL},
+      </if>
+      <if test="record.uid != null">
+        "uid" = #{record.uid,jdbcType=DECIMAL},
+      </if>
+      <if test="record.daimoney != null">
+        daimoney = #{record.daimoney,jdbcType=DECIMAL},
+      </if>
+      <if test="record.shouCard != null">
+        shou_card = #{record.shouCard,jdbcType=VARCHAR},
+      </if>
+      <if test="record.huanCard != null">
+        huan_card = #{record.huanCard,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mou != null">
+        mou = #{record.mou,jdbcType=DECIMAL},
+      </if>
+      <if test="record.daiDate != null">
+        dai_date = #{record.daiDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.yihuan != null">
+        yihuan = #{record.yihuan,jdbcType=DECIMAL},
+      </if>
+      <if test="record.onemoney != null">
+        onemoney = #{record.onemoney,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    <!--@mbg.generated-->
+    update samlldai_order
+    set sdoid = #{record.sdoid,jdbcType=DECIMAL},
+      "uid" = #{record.uid,jdbcType=DECIMAL},
+      daimoney = #{record.daimoney,jdbcType=DECIMAL},
+      shou_card = #{record.shouCard,jdbcType=VARCHAR},
+      huan_card = #{record.huanCard,jdbcType=VARCHAR},
+      mou = #{record.mou,jdbcType=DECIMAL},
+      dai_date = #{record.daiDate,jdbcType=TIMESTAMP},
+      yihuan = #{record.yihuan,jdbcType=DECIMAL},
+      onemoney = #{record.onemoney,jdbcType=DECIMAL}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
+    <!--@mbg.generated-->
+    update samlldai_order
+    <set>
+      <if test="uid != null">
+        "uid" = #{uid,jdbcType=DECIMAL},
+      </if>
+      <if test="daimoney != null">
+        daimoney = #{daimoney,jdbcType=DECIMAL},
+      </if>
+      <if test="shouCard != null">
+        shou_card = #{shouCard,jdbcType=VARCHAR},
+      </if>
+      <if test="huanCard != null">
+        huan_card = #{huanCard,jdbcType=VARCHAR},
+      </if>
+      <if test="mou != null">
+        mou = #{mou,jdbcType=DECIMAL},
+      </if>
+      <if test="daiDate != null">
+        dai_date = #{daiDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="yihuan != null">
+        yihuan = #{yihuan,jdbcType=DECIMAL},
+      </if>
+      <if test="onemoney != null">
+        onemoney = #{onemoney,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where sdoid = #{sdoid,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zhaolian.demo.data.entity.SamlldaiOrder">
+    <!--@mbg.generated-->
+    update samlldai_order
+    set "uid" = #{uid,jdbcType=DECIMAL},
+      daimoney = #{daimoney,jdbcType=DECIMAL},
+      shou_card = #{shouCard,jdbcType=VARCHAR},
+      huan_card = #{huanCard,jdbcType=VARCHAR},
+      mou = #{mou,jdbcType=DECIMAL},
+      dai_date = #{daiDate,jdbcType=TIMESTAMP},
+      yihuan = #{yihuan,jdbcType=DECIMAL},
+      onemoney = #{onemoney,jdbcType=DECIMAL}
+    where sdoid = #{sdoid,jdbcType=DECIMAL}
+  </update>
+</mapper>
