@@ -8,7 +8,7 @@
     <result column="NAME" jdbcType="VARCHAR" property="name" />
     <result column="IDCARD" jdbcType="VARCHAR" property="idcard" />
     <result column="FRONT" jdbcType="VARCHAR" property="front" />
-    <result column="反面图" jdbcType="VARCHAR" property="反面图" />
+    <result column="END" jdbcType="VARCHAR" property="end" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -72,7 +72,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    CARDID, "NAME", IDCARD, FRONT, 反面图
+    CARDID, "NAME", IDCARD, FRONT, "END"
   </sql>
   <select id="selectByExample" parameterType="com.zhaolian.demo.data.entity.IdcardExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -111,9 +111,9 @@
   <insert id="insert" parameterType="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
     insert into IDCARD (CARDID, "NAME", IDCARD, 
-      FRONT, 反面图)
+      FRONT, "END")
     values (#{cardid,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{idcard,jdbcType=VARCHAR}, 
-      #{front,jdbcType=VARCHAR}, #{反面图,jdbcType=VARCHAR})
+      #{front,jdbcType=VARCHAR}, #{end,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.zhaolian.demo.data.entity.Idcard">
     <!--@mbg.generated-->
@@ -131,8 +131,8 @@
       <if test="front != null">
         FRONT,
       </if>
-      <if test="反面图 != null">
-        反面图,
+      <if test="end != null">
+        "END",
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -148,8 +148,8 @@
       <if test="front != null">
         #{front,jdbcType=VARCHAR},
       </if>
-      <if test="反面图 != null">
-        #{反面图,jdbcType=VARCHAR},
+      <if test="end != null">
+        #{end,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -176,8 +176,8 @@
       <if test="record.front != null">
         FRONT = #{record.front,jdbcType=VARCHAR},
       </if>
-      <if test="record.反面图 != null">
-        反面图 = #{record.反面图,jdbcType=VARCHAR},
+      <if test="record.end != null">
+        "END" = #{record.end,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -191,7 +191,7 @@
       "NAME" = #{record.name,jdbcType=VARCHAR},
       IDCARD = #{record.idcard,jdbcType=VARCHAR},
       FRONT = #{record.front,jdbcType=VARCHAR},
-      反面图 = #{record.反面图,jdbcType=VARCHAR}
+      "END" = #{record.end,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -209,8 +209,8 @@
       <if test="front != null">
         FRONT = #{front,jdbcType=VARCHAR},
       </if>
-      <if test="反面图 != null">
-        反面图 = #{反面图,jdbcType=VARCHAR},
+      <if test="end != null">
+        "END" = #{end,jdbcType=VARCHAR},
       </if>
     </set>
     where CARDID = #{cardid,jdbcType=DECIMAL}
@@ -221,7 +221,7 @@
     set "NAME" = #{name,jdbcType=VARCHAR},
       IDCARD = #{idcard,jdbcType=VARCHAR},
       FRONT = #{front,jdbcType=VARCHAR},
-      反面图 = #{反面图,jdbcType=VARCHAR}
+      "END" = #{end,jdbcType=VARCHAR}
     where CARDID = #{cardid,jdbcType=DECIMAL}
   </update>
 </mapper>

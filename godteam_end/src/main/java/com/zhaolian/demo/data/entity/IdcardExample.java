@@ -375,73 +375,73 @@ public class IdcardExample {
             return (Criteria) this;
         }
 
-        public Criteria and反面图IsNull() {
-            addCriterion("反面图 is null");
+        public Criteria andEndIsNull() {
+            addCriterion("\"END\" is null");
             return (Criteria) this;
         }
 
-        public Criteria and反面图IsNotNull() {
-            addCriterion("反面图 is not null");
+        public Criteria andEndIsNotNull() {
+            addCriterion("\"END\" is not null");
             return (Criteria) this;
         }
 
-        public Criteria and反面图EqualTo(String value) {
-            addCriterion("反面图 =", value, "反面图");
+        public Criteria andEndEqualTo(String value) {
+            addCriterion("\"END\" =", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图NotEqualTo(String value) {
-            addCriterion("反面图 <>", value, "反面图");
+        public Criteria andEndNotEqualTo(String value) {
+            addCriterion("\"END\" <>", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图GreaterThan(String value) {
-            addCriterion("反面图 >", value, "反面图");
+        public Criteria andEndGreaterThan(String value) {
+            addCriterion("\"END\" >", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图GreaterThanOrEqualTo(String value) {
-            addCriterion("反面图 >=", value, "反面图");
+        public Criteria andEndGreaterThanOrEqualTo(String value) {
+            addCriterion("\"END\" >=", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图LessThan(String value) {
-            addCriterion("反面图 <", value, "反面图");
+        public Criteria andEndLessThan(String value) {
+            addCriterion("\"END\" <", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图LessThanOrEqualTo(String value) {
-            addCriterion("反面图 <=", value, "反面图");
+        public Criteria andEndLessThanOrEqualTo(String value) {
+            addCriterion("\"END\" <=", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图Like(String value) {
-            addCriterion("反面图 like", value, "反面图");
+        public Criteria andEndLike(String value) {
+            addCriterion("\"END\" like", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图NotLike(String value) {
-            addCriterion("反面图 not like", value, "反面图");
+        public Criteria andEndNotLike(String value) {
+            addCriterion("\"END\" not like", value, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图In(List<String> values) {
-            addCriterion("反面图 in", values, "反面图");
+        public Criteria andEndIn(List<String> values) {
+            addCriterion("\"END\" in", values, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图NotIn(List<String> values) {
-            addCriterion("反面图 not in", values, "反面图");
+        public Criteria andEndNotIn(List<String> values) {
+            addCriterion("\"END\" not in", values, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图Between(String value1, String value2) {
-            addCriterion("反面图 between", value1, value2, "反面图");
+        public Criteria andEndBetween(String value1, String value2) {
+            addCriterion("\"END\" between", value1, value2, "end");
             return (Criteria) this;
         }
 
-        public Criteria and反面图NotBetween(String value1, String value2) {
-            addCriterion("反面图 not between", value1, value2, "反面图");
+        public Criteria andEndNotBetween(String value1, String value2) {
+            addCriterion("\"END\" not between", value1, value2, "end");
             return (Criteria) this;
         }
     }

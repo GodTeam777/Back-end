@@ -12,7 +12,7 @@ public class Idcard implements Serializable {
 
     private String front;
 
-    private String 反面图;
+    private String end;
 
     private static final long serialVersionUID = 1L;
 
@@ -48,12 +48,12 @@ public class Idcard implements Serializable {
         this.front = front;
     }
 
-    public String get反面图() {
-        return 反面图;
+    public String getEnd() {
+        return end;
     }
 
-    public void set反面图(String 反面图) {
-        this.反面图 = 反面图;
+    public void setEnd(String end) {
+        this.end = end;
     }
 
     @Override
@@ -66,7 +66,7 @@ public class Idcard implements Serializable {
         sb.append(", name=").append(name);
         sb.append(", idcard=").append(idcard);
         sb.append(", front=").append(front);
-        sb.append(", 反面图=").append(反面图);
+        sb.append(", end=").append(end);
         sb.append("]");
         return sb.toString();
     }
